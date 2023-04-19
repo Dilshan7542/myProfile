@@ -79,7 +79,7 @@
 
 
 #page-2 .downSection > section:last-child > aside > div {
-    background-image: url("/assets/img/coding1.webp");
+    background-image: url("../img/coding1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 4%;
