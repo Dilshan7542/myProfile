@@ -380,7 +380,7 @@ main > main {
 
 #page-1 > section > .rightSection > section:nth-child(2) > div {
     position: relative;
-    background-image: url("./assets/img/me.png");
+    background-image: url("../img/me.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
