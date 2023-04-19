@@ -16,7 +16,8 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #1b242f;
+    background-color: #ffffff;
+
 
 }
 
@@ -30,33 +31,77 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #03e9f4;
+    background: #ec6767;
 }
 
-a:hover {
-    color: black;
-    background: rgba(14, 200, 211, 0.84);
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 50px #a902ef,
-    0 0 200px #f403e0;
-    margin-left:200px;
-    transition: all 2s;
-}
 
 body > header {
+    position: relative;
     width: 100%;
     height: 10vh;
-    background: rgba(3, 0, 28, 0.89);
+    background: #03001C;
+}
+
+
+body > main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > header::after {
+    content: " ";
+    bottom: 0;
+    height: 4px;
+    border-radius: 100%;
+    position: absolute;
+    /*  box-shadow: 0 0 5px #ea0505;
+      background-color: rgba(234, 5, 5, 0.61);*/
+    box-shadow: 0 0 10px #ffffff;
+    background-color: rgba(255, 255, 255, 0.56);
+    width: 10%;
+    left: 0;
+    animation-name: mainTopShadow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 4s;
+}
+
+body > header:hover::after {
+    width: 85%;
+    left: 5%;
+    box-shadow: 0 0 20px #ffffff, 0 0 20px #ebf0f1;
+    background-color: rgba(255, 255, 255, 0.56);
+    transition: all 4s;
+    animation-name: mainTopShadow-hover;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+}
+
+@keyframes mainTopShadow {
+    from {
+        left: 0;
+        width: 10%;
+    }
+    to {
+        left: 90%;
+    }
 
 }
 
-body > main {
-    width: 100%;
-    display: flex;
-    box-shadow: 0 0 10px #fdf4f4;
-    flex-direction: column;
+@keyframes mainTopShadow-hover {
+    form {
+        width: 80%;
+        left: 10%;
+    }
+    to {
+        width: 10%;
+        left: 45%;
+
+    }
 }
 
 body > footer {
@@ -88,15 +133,30 @@ header > nav > :last-child > ul li {
 
 header > nav > :last-child > ul li a {
     color: white;
-    transition:all 2s;
+    transition: all 2s;
 }
+
+header > nav > :last-child > ul li a:hover {
+    color: black;
+    background: rgba(3, 233, 244, 0.75);
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 50px #a902ef,
+    0 0 200px #f403e0;
+    margin-left: 200px;
+    transition: all 2s;
+
+}
+
 
 main > main {
     width: 100%;
     height: 100vh;
-    background-color: cornflowerblue;
+    background: #03001C;
 
 }
+
 
 /*HEADER ARIA END..*/
 
@@ -104,9 +164,10 @@ main > main {
 /*MAIN PAGE  01 START..*/
 #page-1 {
     height: 90vh;
-    background: #03001C;
+
 
 }
+
 
 #page-1 > section {
     position: relative;
@@ -165,7 +226,7 @@ main > main {
 }
 
 #page-1 > section > section > article > div > h1 {
-    font-size:2.7rem;
+    font-size: 2.7rem;
     letter-spacing: 2px;
 }
 
@@ -242,10 +303,12 @@ main > main {
     0 0 50px #f40303,
     0 0 200px #03e9f4;
 }
+
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
     margin-right: 100px;
     transition: margin-right 2s;
 }
+
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2):hover {
     margin-left: 100px;
     transition: margin-left 2s;
@@ -254,8 +317,8 @@ main > main {
 
 #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div {
     margin-left: 10px;
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 4.1vw;
+    height: 4.1vw;
     border-style: solid;
     border-width: 5px;
     border-radius: 100%;
@@ -304,8 +367,9 @@ main > main {
     padding-top: 10%;
     height: 10%;
 }
-#page-1 > section > .rightSection > section:nth-child(1)>div img{
-   width:100%;
+
+#page-1 > section > .rightSection > section:nth-child(1) > div img {
+    width: 100%;
 }
 
 #page-1 > section > .rightSection > section:nth-child(2) {
@@ -313,17 +377,18 @@ main > main {
     width: 100%;
 
 }
+
 #page-1 > section > .rightSection > section:nth-child(2) > div {
     position: relative;
     background-image: url("/assets/img/me.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width:60%;
+    width: 60%;
     height: 100%;
-   right: 30%;
+    right: 30%;
+
 
 }
-
 
 
 /*
