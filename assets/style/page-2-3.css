@@ -31,11 +31,6 @@
     flex-direction: column;
 }
 
-#page-2 .upSection h1 {
-    padding-left: 10%;
-    font-family: 'Orbitron', sans-serif;
-
-}
 
 /*Down Section*/
 
@@ -89,6 +84,7 @@
 }
 #page-2 .downSection > section:last-child > article>p{
 color: rgba(5, 253, 232, 0.82);
+    margin:2.5%;
 }
 
 
@@ -137,7 +133,6 @@ color: rgba(5, 253, 232, 0.82);
     align-items: self-start;
     padding-left:10%;
     width: 80%;
-
 
 }
 #page-3 > section >section>:first-child{

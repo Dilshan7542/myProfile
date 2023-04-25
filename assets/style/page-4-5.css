@@ -1,0 +1,287 @@
+
+#page-4 {
+    position: relative;
+    height: auto;
+
+}
+
+#page-4::before {
+    content: " ";
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 25%;
+    height: 4px;
+    border-radius: 100%;
+    box-shadow: 0 5px 5px #ffffff;
+}
+
+#page-4 > section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+#page-4 .upSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+
+
+}
+
+#page-4 .upSection > h1 {
+    align-self: self-start;
+    padding-left: 10%;
+}
+
+#page-4 .upSection > div {
+    background-image: url("../img/code2.gif");
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 150px;
+    margin-top: 1%;
+    border-radius: 12px;
+    align-self: center;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+/*DownSection ====================*/
+
+#page-4 .downSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 95vh;
+}
+
+#page-4 .downSection > section {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#page-4 .downSection > section > section {
+    background-color: rgba(253, 253, 253, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 95, 208);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 90%;
+    justify-content: center;
+
+}
+
+#page-4 .downSection > section > section > div {
+    border-radius: 20px;
+    background-color: #000000;
+    margin: 2%;
+    width: 25%;
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgb(48, 186, 204), 0 0 5px rgb(19, 229, 221);
+
+}
+
+#page-4 .downSection > section > section > div > h4 {
+    font-family: 'Goldman', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+#page-4 .downSection > section > section > div:hover {
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 25px #a902ef,
+    0 0 25px #f403e0;
+    transition: box-shadow 2s;
+
+}
+
+
+#page-4 .downSection > section > aside {
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#page-4 .downSection > section > aside > div {
+    width: 40px;
+    height: 20px;
+    margin-top: 20px;
+    background-image: url("../img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: all 2s;
+}
+
+#page-4 .downSection > section > aside > div:hover {
+    box-shadow: 0 0 25px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 25px #a902ef,
+    0 0 25px #f403e0;
+    background-position-x: 100%;
+    transition: all 1s;
+}
+
+#page-4 .downSection > section > aside > div:first-child:hover {
+    width: 40%;
+}
+
+#page-4 .downSection > section > aside > div:last-child:hover {
+    width: 40%;
+}
+
+#page-4 .downSection > section > aside > div:first-child {
+    transform: rotate(180deg);
+    margin-right: 50px;
+}
+
+
+/*PAGE- 05 =================================================>*/
+
+
+#page-5 {
+    position: relative;
+}
+
+#page-5::before {
+    content: " ";
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    left: 25%;
+    height: 4px;
+    border-radius: 100%;
+    box-shadow: 0 5px 5px #ffffff;
+}
+
+#page-5 > section {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#page-5 .upSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#page-5 .upSection > h1 {
+    margin-bottom: 50px;
+}
+
+#page-5 .upSection > section {
+    align-self: center;
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.81);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#page-5 .skillSection {
+    width: 100%;
+    height: 95%;
+    overflow-x: scroll;
+
+}
+
+#page-5 .skillSection::-webkit-scrollbar-track {
+    background-color: #1a1010;
+    width: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#page-5 .skillSection::-webkit-scrollbar {
+    height: 15px;
+}
+
+#page-5 .skillSection::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    box-shadow: 0 0 50px #ffffff;
+    border-radius: 20px;
+    border: black solid 2px;
+}
+
+#page-5 .skillSection::-webkit-scrollbar-thumb:hover {
+    background: #005fd0;
+}
+
+#page-5 .skillSection > section {
+    width: max-content;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+#page-5 .skillSection > section > div {
+    width: 15.88vw;
+    padding-top: 10px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px blue;
+
+
+}
+
+#page-5 .skillSection > section > div:hover {
+    box-shadow: 0 0 15px #03e9f4,
+    0 0 15px #03e9f4,
+    0 0 15px #03e9f4,
+    0 0 15px #a902ef,
+    0 0 15px #f403e0;
+    transition: all 2s;
+}
+
+#page-5 .downSection {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#page-5 .downSection > div {
+    background-image: url("../img/5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
