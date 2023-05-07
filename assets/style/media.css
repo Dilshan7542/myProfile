@@ -9,4 +9,55 @@
         padding-top:0;
         margin-bottom: 0;
     }
+    #page-1 > section > .rightSection > section:nth-child(2) {
+        height: 90%;
+        width: 50%;
+
+
+    }
 }
+
+@media all and (min-width: 100px) and (max-width: 400px){
+    body>header{
+        height: 12vh;
+    }
+    header > nav > div:nth-child(1){
+      padding: 15px;
+    }
+    header > nav > :last-child > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #page-1 > section > .leftSection {
+        width: 100%;
+    }
+    #page-1 > section > .rightSection {
+        display:none;
+    }
+    #page-1 > section > section > article {
+        height: 60%;
+    }
+
+
+    #page-1 > section > .leftSection > section {
+        height: 40%;
+    }
+
+    #page-1 > section > section > article > div > h1 {
+        font-size: 1.9rem;
+    }
+    #page-1 > section > section > article > div p {
+     padding-top: 20px;
+    }
+    #page-1 > section > .leftSection > section > section:nth-child(2) {
+        padding: 0;
+        align-items: center;
+    }
+    #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div{
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+

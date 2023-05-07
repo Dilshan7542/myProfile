@@ -188,7 +188,7 @@ main > main {
 #page-1 > section > .leftSection {
     position: relative;
     height: 100%;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 
@@ -196,7 +196,7 @@ main > main {
 
 /*right-section*/
 #page-1 > section > .rightSection {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -388,8 +388,7 @@ main > main {
 /*right-section Style =========>*/
 
 #page-1 > section > .rightSection > section:nth-child(1) {
-    align-self: self-end;
-    padding-right: 40%;
+    align-self: center;
     padding-top: 10%;
     height: 10%;
 }
@@ -400,18 +399,18 @@ main > main {
 
 #page-1 > section > .rightSection > section:nth-child(2) {
     height: 90%;
-    width: 100%;
+    width: 50%;
+    align-self: self-start;
 
 }
 
 #page-1 > section > .rightSection > section:nth-child(2) > div {
-    position: relative;
     background-image: url("../img/me.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 60%;
+    width: 80%;
     height: 100%;
-    right: 30%;
+
 
 
 }

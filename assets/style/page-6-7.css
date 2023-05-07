@@ -14,24 +14,29 @@
     border-radius: 100%;
     box-shadow: 0 5px 5px #ffffff;
 }
-#page-6 > section{
+
+#page-6 > section {
     display: flex;
     flex-direction: column;
 }
+
 #page-6 > section > .upSection {
     display: flex;
     flex-direction: column;
 }
-#page-6 > section> .upSection ul{
+
+#page-6 > section > .upSection ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-     list-style-type: none;
+    list-style-type: none;
 }
-#page-6  .upSection ul > li{
-    margin:10px;
+
+#page-6 .upSection ul > li {
+    margin: 10px;
 }
-#page-6 .downSection{
+
+#page-6 .downSection {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -39,7 +44,8 @@
     justify-content: center;
 
 }
-#page-6 .downSection>section{
+
+#page-6 .downSection > section {
     display: flex;
     flex-direction: row;
     background-color: rgba(255, 255, 255, 0.81);
@@ -48,52 +54,58 @@
     height: 100%;
     border-radius: 20px;
 }
-#page-6 .downSection>section>section{
+
+#page-6 .downSection > section > section {
     width: 100%;
     height: 90%;
     overflow-x: scroll;
 }
-#page-6 .downSection>section>section::-webkit-scrollbar-track {
+
+#page-6 .downSection > section > section::-webkit-scrollbar-track {
     background-color: #1a1010;
     width: 10px;
     border-radius: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
-#page-6 .downSection>section>section::-webkit-scrollbar{
+
+#page-6 .downSection > section > section::-webkit-scrollbar {
     height: 15px;
 }
 
-#page-6 .downSection>section>section::-webkit-scrollbar-thumb{
+#page-6 .downSection > section > section::-webkit-scrollbar-thumb {
     background: #ffffff;
     box-shadow: 0 0 50px #ffffff;
     border-radius: 20px;
     border: black solid 2px;
 }
-#page-6 .downSection>section>section::-webkit-scrollbar-thumb:hover{
+
+#page-6 .downSection > section > section::-webkit-scrollbar-thumb:hover {
     background: #005fd0;
 }
-#page-6 .downSection>section>section>section{
+
+#page-6 .downSection > section > section > section {
     width: max-content;
     height: 100%;
     display: flex;
     flex-direction: row;
 
 }
-#page-6 .downSection>section>section>section>div{
+
+#page-6 .downSection > section > section > section > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:15.88vw;
-    min-width:12.7vw;
+    width: 15.88vw;
+    min-width: 12.7vw;
     height: 90%;
     margin: 10px;
     border-radius: 20px;
-        background-color: black;
+    background-color: black;
 }
 
 
- /* PAGE -7 ================================>*/
+/* PAGE -7 ================================>*/
 
 #page-7 {
     position: relative;
@@ -110,31 +122,34 @@
     box-shadow: 0 5px 5px #ffffff;
 }
 
-#page-7 > section{
+#page-7 > section {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#page-7 .upSection{
+
+#page-7 .upSection {
     width: 80%;
     display: flex;
     height: 50%;
     flex-direction: column;
 }
-#page-7 .upSection>:last-child{
+
+#page-7 .upSection > :last-child {
     align-self: center;
     background-image: url("../img/MHcC.gif");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -50px;
     width: 40%;
-    height:50%;
-    box-shadow: 0 0 10px #005fd0,0 0 10px #ffffff,0 0 10px #5454e3;
-border-radius: 20px;
+    height: 50%;
+    box-shadow: 0 0 10px #005fd0, 0 0 10px #ffffff, 0 0 10px #5454e3;
+    border-radius: 20px;
 
 }
-#page-7 .downSection{
+
+#page-7 .downSection {
     height: 80vh;
     width: 100%;
     display: flex;
@@ -144,44 +159,47 @@ border-radius: 20px;
 
 }
 
-#page-7 .downSection p{
+#page-7 .downSection p {
     text-align: center;
-    margin:20px;
+    margin: 20px;
 
 }
 
-#page-7 .downSection>section{
+#page-7 .downSection > section {
     width: 70%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.81);
     border-radius: 20px;
 
 }
-#page-7 .downSection>section>section{
+
+#page-7 .downSection > section > section {
     width: 100%;
     height: 95%;
     overflow-x: scroll;
 
 }
 
-#page-7 .downSection>section>section::-webkit-scrollbar-track {
+#page-7 .downSection > section > section::-webkit-scrollbar-track {
     background-color: #1a1010;
     width: 10px;
     border-radius: 20px;
     margin-right: 20px;
     margin-left: 20px;
 }
-#page-7 .downSection>section>section::-webkit-scrollbar{
+
+#page-7 .downSection > section > section::-webkit-scrollbar {
     height: 15px;
 }
 
-#page-7 .downSection>section>section::-webkit-scrollbar-thumb{
+#page-7 .downSection > section > section::-webkit-scrollbar-thumb {
     background: #ffffff;
     box-shadow: 0 0 50px #ffffff;
     border-radius: 20px;
     border: black solid 2px;
 }
-#page-7 .downSection>section>section::-webkit-scrollbar-thumb:hover{
+
+#page-7 .downSection > section > section::-webkit-scrollbar-thumb:hover {
     background: #005fd0;
 }
 
@@ -192,19 +210,20 @@ border-radius: 20px;
     flex-direction: column;
 
 }
-#page-7 .scrollSection>section{
+
+#page-7 .scrollSection > section {
     flex-grow: 1;
 }
 
 
-
-#page-7 .scrollSection>.up{
+#page-7 .scrollSection > .up {
     width: 100%;
     display: flex;
     flex-direction: row;
 
 }
-#page-7 .scrollSection>.down{
+
+#page-7 .scrollSection > .down {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -214,9 +233,9 @@ border-radius: 20px;
 
 /*UP=======>*/
 
-#page-7 .up>section{
-width: 50%;
-  /*  border: red solid 0.5px;*/
+#page-7 .up > section {
+    width: 50%;
+    /*  border: red solid 0.5px;*/
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -224,70 +243,65 @@ width: 50%;
 
 
 /*first-Child===================>*/
-#page-7 .up>:first-child>div{
+#page-7 .up > :first-child > div {
     background-color: black;
     height: 100%;
 
 
 }
-#page-7 .up>:first-child>div:nth-child(1){
+
+#page-7 .up > :first-child > div:nth-child(1) {
     width: 60%;
     margin-top: 20px;
     margin-bottom: 0;
     border-radius: 20px;
     align-self: center;
 }
-#page-7 .up>:first-child>div:nth-child(2){
+
+#page-7 .up > :first-child > div:nth-child(2) {
     width: 4%;
     margin-right: 26%;
     align-self: center;
 }
-#page-7 .up>:first-child>div:nth-child(3){
+
+#page-7 .up > :first-child > div:nth-child(3) {
     width: 70%;
-    height:20%;
+    height: 20%;
 }
 
 
 /*UP ALL CHILD============>*/
 
-#page-7 .up>section>div{
+#page-7 .up > section > div {
     background-color: black;
     height: 100%;
 
 }
-#page-7 .up>section>div:nth-child(1){
+
+#page-7 .up > section > div:nth-child(1) {
     width: 60%;
     margin-top: 20px;
     margin-bottom: 0;
     border-radius: 20px;
     align-self: flex-start;
 }
-#page-7 .up>section>div:nth-child(2){
+
+#page-7 .up > section > div:nth-child(2) {
     width: 4%;
     align-self: flex-start;
-   margin-left:26%;
-}
-#page-7 .up>section>div:nth-child(3){
-    width:100%;
-    height:20%;
+    margin-left: 26%;
 }
 
-
-
-
-
-
-
-
-
-
-
+#page-7 .up > section > div:nth-child(3) {
+    width: 100%;
+    height: 20%;
+}
 
 
 /*DOWN=======>*/
 
 
-#page-7 .down>section{
+#page-7 .down > section {
     box-sizing: border-box;
     width: 60%;
     height: 100%;
@@ -296,26 +310,26 @@ width: 50%;
     align-items: flex-end;
 
 }
-#page-7 .down>section>div{
+
+#page-7 .down > section > div {
     background-color: black;
 }
-#page-7 .down>section>div:first-child{
+
+#page-7 .down > section > div:first-child {
     width: 4%;
     height: 40%;
     margin-right: 26%;
 
 }
-#page-7 .down>section>div:last-child{
+
+#page-7 .down > section > div:last-child {
     width: 60%;
     height: 50%;
     border-radius: 20px;
 }
 
 
-
-
-
-#page-7 .down>:first-child{
+#page-7 .down > :first-child {
 
     width: 60%;
     height: 100%;
@@ -324,16 +338,19 @@ width: 50%;
     align-items: flex-end;
 
 }
-#page-7 .down>:first-child>div{
+
+#page-7 .down > :first-child > div {
     background-color: black;
 }
-#page-7 .down>:first-child>div:first-child{
+
+#page-7 .down > :first-child > div:first-child {
     width: 4%;
     height: 40%;
     margin-right: 26%;
 }
-#page-7 .down>:first-child>div:last-child{
-    width:60%;
+
+#page-7 .down > :first-child > div:last-child {
+    width: 60%;
     height: 50%;
     border-radius: 20px;
 }
