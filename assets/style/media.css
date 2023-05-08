@@ -17,10 +17,30 @@
     }
 }
 
-@media all and (min-width: 100px) and (max-width: 400px){
+@media all and (min-width: 100px) and (max-width: 450px){
+
     body>header{
         height: 12vh;
+        z-index: 10;
     }
+    body > header::after {
+        box-shadow: 0 0 20px #e52f2f, 0 0 20px #f10909;
+        background-color: rgba(225, 9, 9, 0.56);
+        animation-duration: 5s;
+        transition: all 4s;
+    }
+    .mainHeaders{
+        margin-top: 15vh;
+        font-size: 1.5em;
+    }
+    header > nav > :last-child > ul li a:hover {
+        margin-left: 5px;
+        transition: all 4s;
+    }
+    main>main{
+        height: max-content;
+    }
+
     header > nav > div:nth-child(1){
       padding: 15px;
     }
@@ -28,6 +48,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+    }
+
+    /*PAGE- STYLE=========================*/
+    #page-1{
+        height: 100vh;
     }
     #page-1 > section > .leftSection {
         width: 100%;
@@ -36,28 +62,109 @@
         display:none;
     }
     #page-1 > section > section > article {
-        height: 60%;
+        height: 50%;
     }
-
 
     #page-1 > section > .leftSection > section {
-        height: 40%;
+        height: 50%;
     }
-
+    #page-1 > section > section > article > div:nth-child(1) {
+        align-self: center;
+    }
     #page-1 > section > section > article > div > h1 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     #page-1 > section > section > article > div p {
      padding-top: 20px;
+        font-size: 1.4rem;
     }
+    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1) {
+        width: 70px;
+    }
+
+    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2) {
+        margin-left: 15px;
+        width: 120px;
+    }
+    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
+        margin-right: 50px;
+    }
+
+    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2):hover {
+        margin-left: 50px;
+    }
+
     #page-1 > section > .leftSection > section > section:nth-child(2) {
-        padding: 0;
-        align-items: center;
+       padding-top: 5vh;
+        align-items: self-start;
     }
     #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div{
         width: 15vw;
         height: 15vw;
     }
+
+    /*PAGE TOW STYLE======================*/
+        #page-2 .downSection{
+            font-size:12px;
+            height: 150vh;
+
+        }
+    #page-2 .downSection > section:first-child{
+        margin-bottom: 20px;
+    }
+    #page-2 .downSection > section:first-child h4{
+       padding-left: 4%;
+        font-size: 1.3em;
+    }
+    #page-2 .downSection > section:first-child h3{
+        padding-left:11%;
+    }
+
+#page-2 .downSection > section:last-child > aside > div {
+    padding-bottom: 200%;
+    background-position-x: 69% !important;
+    border-radius: 15px;
+
 }
+    #page-2 .downSection > section:last-child > article> p{
+        margin: 5px;
+    }
+    #page-2 .downSection > section:last-child > article>p:nth-child(3){
+       position: relative;
+        right: 40%;
+        margin-top: 25px;
+        width: 90vw;
+    }
+    #page-2 .downSection > section:last-child > article>p:nth-child(4){
+        position: relative;
+        right: 40%;
+        margin-top: 20px;
+        width: 90vw;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
