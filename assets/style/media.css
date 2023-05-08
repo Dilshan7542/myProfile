@@ -1,14 +1,14 @@
-
-
-@media all and (min-width: 1400px){
+@media all and (min-width: 1400px) {
     #page-1 > section > section > article > div > h1 {
         font-size: 3rem;
         letter-spacing: 10px;
     }
+
     #page-1 > section > section > article > div > h1:first-child {
-        padding-top:0;
+        padding-top: 0;
         margin-bottom: 0;
     }
+
     #page-1 > section > .rightSection > section:nth-child(2) {
         height: 90%;
         width: 50%;
@@ -17,34 +17,44 @@
     }
 }
 
-@media all and (min-width: 100px) and (max-width: 450px){
-
-    body>header{
+@media all and (min-width: 100px) and (max-width: 450px) {
+    :root{
+        --pRed: rgba(255, 68, 68, 0.56);
+    }
+    body > header {
         height: 12vh;
         z-index: 10;
     }
+
     body > header::after {
         box-shadow: 0 0 20px #e52f2f, 0 0 20px #f10909;
         background-color: rgba(225, 9, 9, 0.56);
         animation-duration: 5s;
         transition: all 4s;
     }
-    .mainHeaders{
+
+    .mainHeaders {
         margin-top: 15vh;
         font-size: 1.5em;
+        text-align: center;
+        padding-left: 0 !important;
+
     }
+
     header > nav > :last-child > ul li a:hover {
         margin-left: 5px;
         transition: all 4s;
     }
-    main>main{
+
+    main > main {
         height: max-content;
     }
 
-    header > nav > div:nth-child(1){
-      padding: 15px;
+    header > nav > div:nth-child(1) {
+        padding: 15px;
     }
-    header > nav > :last-child > ul{
+
+    header > nav > :last-child > ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -52,15 +62,18 @@
     }
 
     /*PAGE- STYLE=========================*/
-    #page-1{
+    #page-1 {
         height: 100vh;
     }
+
     #page-1 > section > .leftSection {
         width: 100%;
     }
+
     #page-1 > section > .rightSection {
-        display:none;
+        display: none;
     }
+
     #page-1 > section > section > article {
         height: 50%;
     }
@@ -68,16 +81,20 @@
     #page-1 > section > .leftSection > section {
         height: 50%;
     }
+
     #page-1 > section > section > article > div:nth-child(1) {
         align-self: center;
     }
+
     #page-1 > section > section > article > div > h1 {
         font-size: 1.5rem;
     }
+
     #page-1 > section > section > article > div p {
-     padding-top: 20px;
+        padding-top: 20px;
         font-size: 1.4rem;
     }
+
     #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1) {
         width: 70px;
     }
@@ -86,6 +103,7 @@
         margin-left: 15px;
         width: 120px;
     }
+
     #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
         margin-right: 50px;
     }
@@ -95,47 +113,53 @@
     }
 
     #page-1 > section > .leftSection > section > section:nth-child(2) {
-       padding-top: 5vh;
+        padding-top: 5vh;
         align-items: self-start;
     }
-    #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div{
+
+    #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div {
         width: 15vw;
         height: 15vw;
     }
 
     /*PAGE TOW STYLE======================*/
-        #page-2 .downSection{
-            font-size:12px;
-            height: 150vh;
+    #page-2 .downSection {
+        font-size: 12px;
+        height: 150vh;
 
-        }
-    #page-2 .downSection > section:first-child{
+    }
+
+    #page-2 .downSection > section:first-child {
         margin-bottom: 20px;
     }
-    #page-2 .downSection > section:first-child h4{
-       padding-left: 4%;
+
+    #page-2 .downSection > section:first-child h4 {
+        padding-left: 4%;
         font-size: 1.3em;
     }
-    #page-2 .downSection > section:first-child h3{
-        padding-left:11%;
+
+    #page-2 .downSection > section:first-child h3 {
+        padding-left: 11%;
     }
 
-#page-2 .downSection > section:last-child > aside > div {
-    padding-bottom: 200%;
-    background-position-x: 69% !important;
-    border-radius: 15px;
+    #page-2 .downSection > section:last-child > aside > div {
+        padding-bottom: 200%;
+        background-position-x: 69% !important;
 
-}
-    #page-2 .downSection > section:last-child > article> p{
+    }
+
+    #page-2 .downSection > section:last-child > article > p {
         margin: 5px;
     }
-    #page-2 .downSection > section:last-child > article>p:nth-child(3){
-       position: relative;
+
+    #page-2 .downSection > section:last-child > article > p:nth-child(3) {
+        position: relative;
         right: 40%;
         margin-top: 25px;
         width: 90vw;
     }
-    #page-2 .downSection > section:last-child > article>p:nth-child(4){
+
+    #page-2 .downSection > section:last-child > article > p:nth-child(4) {
         position: relative;
         right: 40%;
         margin-top: 20px;
@@ -144,18 +168,120 @@
     }
 
 
+    /*PAGE 3 STYLE======================*/
+    #page-3 > section > article {
+        font-size: 12px;
+        align-content: center;
+    }
+
+    #page-3 > section > article > p {
+        text-align: center;
+        margin-bottom: 25px !important;
+    }
+
+    #page-3 > section > article > p:nth-child(odd) {
+        color:var(--pRed);
+    }
+
+    #page-3 > section > article > p:nth-child(even) {
+        color: rgba(255, 255, 255, 0.59);
+    }
+
+    /*PAGE 4 STYLE======================*/
+    #page-4 .upSection > div {
+        width: 80% !important;
+        height: 100px !important;
+        background-position-y: -100px;
+    }
+
+    #page-4 .mainHeaders {
+        align-self: center !important;
+    }
+
+    #page-4 .downSection {
+        width: 100%;
+        height: 60vh;
+    }
+
+    #page-4 .downSection > section {
+        width: 70% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-4 .downSection > section > section {
+        justify-content: center;
+        height: 88% !important;
+    }
+
+    #page-4 .downSection > section > section > .serviceSection {
+        height: 95% !important;
+        overflow-x: scroll;
+        width: 90% !important;
+        align-self: center;
+    }
+
+    #page-4 .downSection > section > section > .serviceSection > section {
+        width: max-content !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+
+    #page-4 .downSection .serviceSection section > div {
+        margin: 10px !important;
+        /*   width: 62% !important;*/
+        width: 58vw !important;
+        height: 45% !important;
+
+    }
+
+    #page-4 .downSection .serviceSection section > div:hover {
+        box-shadow: 0 0 5px #03e9f4,
+        0 0 10px #e30ddf,
+        0 0 10px #f403f0,
+        0 0 10px #a902ef,
+        0 0 10px #f403e0 !important;
+        transition: all 2s !important;
+    }
 
 
+    /*PAGE 5 AND PAGE 6 STYLE======================*/
+    #page-5 .skillSection > section > div, #page-6 .downSection > section > section > section > div {
+        width: 65vw !important;
 
+    }
+    #page-6{
+        height: 100vh;
+    }
 
+    /*PAGE 7 STYLE (Education)======================*/
+    #page-7 .downSection {
+        margin-bottom: 0 !important;
+    }
+    #page-7 .downSection > section {
+        height: 70% !important;
+        width: 90% !important;
+    }
 
+    #page-7 .scrollSection{
+        width: 300%!important;
+    }
 
+    /*PAGE 8 STYLE(Gallery)======================*/
+    #page-8 .gallerySection > section{
+        width: 90% !important;
+    }
 
+    /*PAGE 9 STYLE (Contract Me)======================*/
 
-
-
-
-
+    #page-9 .mainHeaders{
+        align-self: center;
+    }
+    #page-9 p{
+        color: var(--pRed);
+        font-size: 16px!important;
+    }
 
 
 

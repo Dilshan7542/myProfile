@@ -57,31 +57,50 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
 }
 
 #page-4 .downSection > section {
     width: 60%;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
 
-
 #page-4 .downSection > section > section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(253, 253, 253, 0.85);
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(0, 95, 208);
+}
+
+#page-4 .downSection > section > aside {
+    height: 10%;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
     width: 100%;
+
+}
+#page-4 .downSection > section > section > .serviceSection{
+    height: 100%;
+    width: 100%;
+}
+
+#page-4 .downSection > section > section > .serviceSection > section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 90%;
+    height: 95%;
     justify-content: center;
 
 }
 
-#page-4 .downSection > section > section > div {
+#page-4 .downSection .serviceSection section > div {
     border-radius: 20px;
     background-color: #000000;
     margin: 2%;
@@ -91,34 +110,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 5px rgb(48, 186, 204), 0 0 5px rgb(19, 229, 221);
+    box-shadow: 0 0 5px blue;
 
 }
 
-#page-4 .downSection > section > section > div > h4 {
+#page-4 .downSection .serviceSection section > div > h4 {
     font-family: 'Goldman', cursive;
     font-size: 1.5em;
     text-align: center;
     color: rgba(255, 255, 255, 0.86);
 }
 
-#page-4 .downSection > section > section > div:hover {
+#page-4 .downSection .serviceSection section > div:hover {
     box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 25px #03e9f4,
+    0 0 25px #f403f0,
     0 0 25px #a902ef,
     0 0 25px #f403e0;
     transition: box-shadow 2s;
 
-}
-
-
-#page-4 .downSection > section > aside {
-    margin-top: 5px;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    width: 100%;
 }
 
 
@@ -213,7 +222,7 @@
 
 }
 
-#page-5 .skillSection::-webkit-scrollbar-track {
+#page-5 .skillSection::-webkit-scrollbar-track ,.serviceSection::-webkit-scrollbar-track{
     background-color: #1a1010;
     width: 10px;
     border-radius: 20px;
@@ -221,18 +230,18 @@
     margin-left: 20px;
 }
 
-#page-5 .skillSection::-webkit-scrollbar {
+#page-5 .skillSection::-webkit-scrollbar,.serviceSection::-webkit-scrollbar {
     height: 15px;
 }
 
-#page-5 .skillSection::-webkit-scrollbar-thumb {
+#page-5 .skillSection::-webkit-scrollbar-thumb ,.serviceSection::-webkit-scrollbar-thumb{
     background: #ffffff;
     box-shadow: 0 0 50px #ffffff;
     border-radius: 20px;
     border: black solid 2px;
 }
 
-#page-5 .skillSection::-webkit-scrollbar-thumb:hover {
+#page-5 .skillSection::-webkit-scrollbar-thumb:hover,.serviceSection::-webkit-scrollbar-thumb:hover {
     background: #005fd0;
 }
 
