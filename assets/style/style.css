@@ -164,6 +164,63 @@ main > main {
     background: #03001C;
 
 }
+main>aside{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    margin: auto;
+}
+main>aside>section{
+    background-color: rgba(255, 255, 255, 0.43);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: 10px;
+    margin-right: 0;
+    cursor: pointer;
+    height: max-content;
+    width: 10vw;
+    position: relative;
+    right: -7vw;
+    transition: all 2s;
+
+
+}
+main>aside>section>div{
+    width: 100%;
+    height: 100%;
+}
+main>aside>section>div img{
+    width: 2vw;
+    transition: all 2s;
+
+}
+main>aside>section>div>a{
+    display: flex;
+}
+main>aside>section>div>a > span{
+    padding-left: 1vw;
+  align-self: center;
+    font-weight: bold;
+   visibility: collapse;
+}
+main>aside>section:hover{
+    right: 0;
+    transition: all 1.5s;
+    background-color: white;
+}
+main>aside>section:hover img{
+    transform: rotate(-360deg);
+    transition: all 2s;
+}
+main>aside>section:hover span{
+    visibility: visible;
+    color: black;
+}
+
+
 .mainHeaders{
    margin-top: 10vh;
 }

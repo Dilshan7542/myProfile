@@ -49,6 +49,21 @@
     main > main {
         height: max-content;
     }
+    main>aside>section{
+        width: 30vw;
+        right: -23vw;
+    }
+
+
+    main>aside>section:hover{
+        right: 0;
+    }
+    main>aside>section:hover span{
+        color: black;
+    }
+    main>aside>section>div img{
+        width: 5vw;
+    }
 
     header > nav > div:nth-child(1) {
         padding: 15px;
@@ -143,19 +158,24 @@
     }
 
     #page-2 .downSection > section:last-child > aside > div {
-        padding-bottom: 200%;
+        padding-bottom: 220%;
         background-position-x: 69% !important;
-
+        width: 110% !important;
+        margin-left: 15% !important;
     }
 
     #page-2 .downSection > section:last-child > article > p {
         margin: 5px;
+        margin-right: 20% !important;
     }
-
+    #page-2 .downSection > section:last-child > article > p:nth-child(1),
+    #page-2 .downSection > section:last-child > article > p:nth-child(2)
+    {
+        margin-left: 10% !important;
+    }
     #page-2 .downSection > section:last-child > article > p:nth-child(3) {
         position: relative;
         right: 40%;
-        margin-top: 25px;
         width: 90vw;
     }
 
