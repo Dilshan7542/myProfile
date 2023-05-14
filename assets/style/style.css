@@ -1,4 +1,9 @@
 
+:root{
+    --pRed: rgba(255, 68, 68, 0.56);
+}
+
+
 *, *::after, ::before {
     color: white;
     box-sizing: border-box;
@@ -46,19 +51,11 @@ body > header {
     position: fixed;
     width: 100%;
     height: 10vh;
-    background: rgba(4, 3, 28, 0.96);
+    background: rgba(4, 3, 28, 0.98);
     z-index: 10;
     opacity: 0.8;
+
 }
-
-
-body > main {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 body > header::after {
     content: " ";
     bottom: 0;
@@ -76,43 +73,8 @@ body > header::after {
     animation-direction: alternate;
 }
 
-/*body > header:hover::after {
-    width: 85%;
-    left: 5%;
-    box-shadow: 0 0 20px #ffffff, 0 0 20px #ebf0f1;
-    background-color: rgba(255, 255, 255, 0.56);
-    transition: all 4s;
-    animation-name: mainTopShadow-hover;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-direction: reverse;
-}*/
 
-@keyframes mainTopShadow {
-    from {
-        left: 0;
-        width: 10%;
-    }
-    to {
-        left: 90%;
-    }
 
-}
-
-@keyframes mainTopShadow-hover {
-    form {
-        width: 80%;
-        left: 10%;
-    }
-    to {
-        width: 10%;
-        left: 45%;
-    }
-}
-
-body > footer {
-    width: 100%;
-}
 
 /*HEADER ARIA START..*/
 header > nav {
@@ -156,12 +118,47 @@ header > nav > :last-child > ul li a:hover {
     transition: all 2s;
 
 }
+body > main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+body > footer {
+    width: 100%;
+}
 
 main > main {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.76);
     width: 100%;
     height: 100vh;
-    background: #03001C;
+    align-items: end;
+
+}
+
+main>section{
+    width: 90%;
+    height: 89%;
+    max-height: 100%;
+    display: flex;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0 0 5px #030ff4;
+    transition: all 2s !important;
+}
+main>section:hover{
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 20px #03e9f4,
+    0 0 20px #03e9f4,
+    0 0 20px #a902ef,
+    0 0 50px #f403e0;
+    transition: all 2s;
+}
+.mainHeaders{
 
 }
 main>aside{
@@ -174,7 +171,7 @@ main>aside{
     margin: auto;
 }
 main>aside>section{
-    background-color: rgba(255, 255, 255, 0.43);
+    background-color: rgba(0, 0, 0, 0.21);
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     margin: 10px;
@@ -185,9 +182,8 @@ main>aside>section{
     position: relative;
     right: -7vw;
     transition: all 2s;
-
-
 }
+
 main>aside>section>div{
     width: 100%;
     height: 100%;
@@ -202,9 +198,9 @@ main>aside>section>div>a{
 }
 main>aside>section>div>a > span{
     padding-left: 1vw;
-  align-self: center;
+    align-self: center;
     font-weight: bold;
-   visibility: collapse;
+    visibility: collapse;
 }
 main>aside>section:hover{
     right: 0;
@@ -221,268 +217,27 @@ main>aside>section:hover span{
 }
 
 
-.mainHeaders{
-   margin-top: 10vh;
-}
 
 /*HEADER ARIA END..*/
 
-
-/*MAIN PAGE  01 START..*/
-#page-1 {
-    height: 90vh;
-    margin-top: 10vh;
-
-}
-
-
-#page-1 > section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 1;
-    flex-wrap: wrap;
-}
-
-/*left-section*/
-#page-1 > section > .leftSection {
-    position: relative;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+@keyframes mainTopShadow {
+    from {
+        left: 0;
+        width: 10%;
+    }
+    to {
+        left: 90%;
+    }
 
 }
 
-/*right-section*/
-#page-1 > section > .rightSection {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/*left-section Style =========>*/
-#page-1 > section > section > article {
-    display: flex;
-    flex-direction: column;
-    height: 70%;
-    width: 100%;
-}
-
-
-#page-1 > section > .leftSection > section {
-    width: 100%;
-    display: flex;
-    height: 30%;
-    flex-direction: column;
-}
-
-#page-1 > section > section > article > div:nth-child(1) {
-    align-self: self-end;
-}
-
-#page-1 > section > section > article > div:nth-child(2) {
-    padding-top: 1%;
-    align-self: center;
-}
-
-#page-1 > section > section > article > div > h1 {
-    font-size: 2.7rem;
-    letter-spacing: 2px;
-    padding-left: 0;
-}
-
-#page-1 > section > section > article > div > h1:first-child {
-    padding-top: 5%;
-    margin-bottom: 0;
-}
-
-#page-1 > section > section > article > div > h1:last-child {
-    margin: 0;
-}
-
-#page-1 > section > section > article > div p {
-    margin: 0;
-    font-size: 1.7em;
-    letter-spacing: 4px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-
-#page-1 > section > .leftSection > section > section:nth-child(1) {
-    display: flex;
-    height: max-content;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    align-items: end;
-    padding-bottom: 5%;
-    cursor: pointer;
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(1) > div {
-
-    background-color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 20px #03e9f4;
-    color: #03e9f4;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: 1s;
-    cursor: pointer;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(1) > div > h2 {
-    font-size: 1em;
-    text-align: center;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1) {
-    width: 100px;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2) {
-    margin-left: 20px;
-    width: 150px;
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(1) > div:hover {
-    background: #03e9f4;
-    color: #050801;
-
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 50px #a902ef,
-    0 0 50px #f40303,
-    0 0 200px #03e9f4;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
-    margin-right: 100px;
-    transition: margin-right 2s;
-}
-
-#page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2):hover {
-    margin-left: 100px;
-    transition: margin-left 2s;
-}
-
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div {
-    margin-left: 10px;
-    width: 4.1vw;
-    height: 4.1vw;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 100%;
-    transform: rotate(-360deg);
-    transition: transform 2s;
-
-}
-
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(1) {
-    border-color: #ffffff;
-
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(2) {
-    border-color: #ffffff;
-
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(3) {
-    border-color: #ffffff;
-}
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(4) {
-    border-color: #ffffff;
-
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(4) img{
-    box-sizing: border-box;
-    border:black solid 2px;
-    border-radius: 100%;
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div {
-    transition: all 2s;
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div  img {
-    width: 100%;
-    height: 100%;
-
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:hover {
-    border-color: #ffffff;
-    transform: rotate(360deg);
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 50px #a902ef,
-    0 0 50px #f40303,
-    0 0 200px #03e9f4;
-    transition: all 2s;
-}
-
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(2):hover,
-#page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:nth-child(3):hover {
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-
-/*right-section Style =========>*/
-
-#page-1 > section > .rightSection > section:nth-child(1) {
-    align-self: center;
-    padding-top: 10%;
-    height: 10%;
-}
-
-#page-1 > section > .rightSection > section:nth-child(1) > div img {
-    width: 100%;
-}
-
-#page-1 > section > .rightSection > section:nth-child(2) {
-    height: 90%;
-    width: 50%;
-    align-self: self-start;
-
-}
-
-#page-1 > section > .rightSection > section:nth-child(2) > div {
-    background-image: url("../img/me.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
-    height: 100%;
-}
-
-
-/*
-@media all and (max-width: 1000px) {
-    #page-1 > section > section:nth-child(2) > section:nth-child(2) > div > img {
-        width: 70%;
-        display: none;
+@keyframes mainTopShadow-hover {
+    form {
+        width: 80%;
+        left: 10%;
+    }
+    to {
+        width: 10%;
+        left: 45%;
     }
 }
-*/
-
-

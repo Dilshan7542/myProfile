@@ -18,9 +18,7 @@
 }
 
 @media all and (min-width: 100px) and (max-width: 450px) {
-    :root{
-        --pRed: rgba(255, 68, 68, 0.56);
-    }
+
     body > header {
         height: 12vh;
         z-index: 10;
@@ -82,11 +80,11 @@
     }
 
     #page-1 > section > .leftSection {
-        width: 100%;
+        width: 100% !important;
     }
 
     #page-1 > section > .rightSection {
-        display: none;
+        display: none!important;
     }
 
     #page-1 > section > section > article {
@@ -199,9 +197,7 @@
         margin-bottom: 25px !important;
     }
 
-    #page-3 > section > article > p:nth-child(odd) {
-        color:var(--pRed);
-    }
+
 
     #page-3 > section > article > p:nth-child(even) {
         color: rgba(255, 255, 255, 0.59);
@@ -280,8 +276,8 @@
         margin-bottom: 0 !important;
     }
     #page-7 .downSection > section {
-        height: 70% !important;
-        width: 90% !important;
+        height: 80% !important;
+        width: 80% !important;
     }
 
     #page-7 .scrollSection{

@@ -124,12 +124,34 @@
     font-size: 1.5em;
 }
 
-#page-9 .upSection > :last-child {
-    flex-direction: row;
-    width: 100%;
+
+
+
+.contactForm{
     justify-content: center;
-    padding-left: 20%;
+    height:50%;
+    width: 100%;
 }
+.contactForm>input,textarea{
+    border-radius: 12px;
+    margin:10px;
+    border: blue solid 2px;
+    box-shadow: 0 0 5px white;
+    color: black;
+}
+.contactForm>:first-child{
+    height: 100px;
+}
+
+.contactForm>button{
+    background-color: red;
+    border-radius: 12px;
+    height:max-content;
+    font-size: 2em;
+}
+
+
+
 
 #page-9 .upSection > :last-child > div {
     width: 30%;

@@ -4,19 +4,28 @@
     <title>My Profile | Dilshan Maduranga</title>
     <meta charset="UTF-8">
     <link rel="icon" href="assets/img/call_icon.png">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/normalize.css">
-    <link rel="stylesheet" href="assets/style/buttons.css">
-    <link rel="stylesheet" href="assets/style/media.css">
-    <link rel="stylesheet" href="assets/style/page-2-3.css">
-    <link rel="stylesheet" href="assets/style/page-4-5.css">
-    <link rel="stylesheet" href="assets/style/page-6-7.css">
-    <link rel="stylesheet" href="assets/style/page-8-9.css">
     <meta name="keywords" content="Dilshan,Maduranga,Software engineer">
     <meta name="description" content="My name is Dilshan Maduranga I am a software developer in Sri lanka">
     <meta name="viewport" content="width=device-width initial-scale=1">
+        <!--Default all style sheet(ROOT)-->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+        <!--Media Query sheet-->
+    <link rel="stylesheet" href="assets/style/media.css">
+    <!--Home CSS-->
+    <link rel="stylesheet" href="assets/style/page-1.css">
+    <!--About me and who am I sheet CSS-->
+    <link rel="stylesheet" href="assets/style/page-2-3.css">
+    <!--Service and Skill sheet CSS-->
+    <link rel="stylesheet" href="assets/style/page-4-5.css">
+    <!--Project and Education sheet CSS-->
+    <link rel="stylesheet" href="assets/style/page-6-7.css">
+    <!--Gallery and Contact Me sheet CSS-->
+    <link rel="stylesheet" href="assets/style/page-8-9.css">
     <!--<meta http-equiv="refresh" content="2;www.google.com">-->
     <meta name="team-color" content="green">
+
+  <!--  import google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -25,15 +34,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <!--/google font-END-->
+
+        <!--AOS Animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- Animation.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
-<body>
-<header id="header-home">
+<body id="particles-js">
+<header id="header-home" >
     <nav>
         <div><img src="./assets/img/world.gif" alt="" width="10%"></div>
         <div>
             <ul>
-                <li><a href="#page-2">About Me</a></li>
+                <li id="btnAboutMe"><a href="#page-2" >About Me</a></li>
                 <li><a href="#page-4">Service</a></li>
                 <li><a href="#page-5">Skill</a></li>
                 <li><a href="#page-6">Project</a></li>
@@ -49,7 +64,7 @@
     <!--Page 1-->
     <main id="page-1">
         <!--Main Section-->
-        <section>
+        <section class="animate__animated">
             <!-- LeftSection -->
             <section class="leftSection">
                 <article>
@@ -85,7 +100,7 @@
                         </div>
                         <div>
                             <a href="#">
-                            <img src="./assets/img/hackerrank.png" alt="Stackoverflow Icon">
+                                <img src="./assets/img/hackerrank.png" alt="Stackoverflow Icon">
                             </a>
                         </div>
                     </section>
@@ -105,7 +120,7 @@
     <!--Page 2-->
     <main id="page-2">
         <!--Main Section-->
-        <section>
+        <section data-aos="zoom-in" >
             <!--Up Section-->
             <section class="upSection"><h1 class="mainHeaders">About Me</h1></section>
             <!--Down Section-->
@@ -131,9 +146,9 @@
         </section>
     </main>
     <!--Page 3-->
-    <main id="page-3">
+    <main  id="page-3">
         <!--Main Section-->
-        <section>
+        <section data-aos="zoom-in">
             <section>
                 <div><h2>What I Can Do</h2></div>
                 <div></div>
@@ -164,39 +179,38 @@
             <!--Up Section-->
             <section class="upSection">
                 <h1 class="mainHeaders">Service</h1>
-                <div></div>
             </section>
             <!--Down Section-->
-            <section class="downSection">
+            <section class="downSection" >
                 <section>
                     <section>
-                        <section class="serviceSection">
-                    <section>
-                        <div>
-                            <div><img src="./assets/img/service/icons8-placeholder.png" alt="icon-01"></div>
-                            <h4>Software Development</h4>
-                        </div>
-                        <div>
-                            <div><img src="./assets/img/service/icons8-web-50.png" alt="icon-02"></div>
-                            <h4>Web Development</h4>
-                        </div>
-                        <div>
-                            <div><img src="./assets/img/service/icons8-mobile.png" alt="icon-03"></div>
-                            <h4>Mobile App Development</h4>
-                        </div>
-                        <div>
-                            <div><img src="./assets/img/service/db-icon.png" alt="icon-04"></div>
-                            <h4>Database Manage</h4>
-                        </div>
-                        <div>
-                            <div><img src="./assets/img/service/design-50.png" alt="icon-06"></div>
-                            <h4>UI/UX Design</h4>
-                        </div>
-                        <div>
-                            <div><img src="./assets/img/service/icons-pen-50.png" alt="icon-05"></div>
-                            <h4>Graphic Design</h4>
-                        </div>
-                    </section>
+                        <section  id="serviceSection">
+                            <section>
+                                <div>
+                                    <div><img src="./assets/img/service/icons8-placeholder.png" alt="icon-01"></div>
+                                    <h4>Software Development</h4>
+                                </div>
+                                <div>
+                                    <div><img src="./assets/img/service/icons8-web-50.png" alt="icon-02"></div>
+                                    <h4>Web Development</h4>
+                                </div>
+                                <div>
+                                    <div><img src="./assets/img/service/icons8-mobile.png" alt="icon-03"></div>
+                                    <h4>Mobile App Development</h4>
+                                </div>
+                                <div>
+                                    <div><img src="./assets/img/service/db-icon.png" alt="icon-04"></div>
+                                    <h4>Database Manage</h4>
+                                </div>
+                                <div>
+                                    <div><img src="./assets/img/service/design-50.png" alt="icon-06"></div>
+                                    <h4>UI/UX Design</h4>
+                                </div>
+                                <div>
+                                    <div><img src="./assets/img/service/icons-pen-50.png" alt="icon-05"></div>
+                                    <h4>Graphic Design</h4>
+                                </div>
+                            </section>
                         </section>
                     </section>
                     <aside>
@@ -447,7 +461,7 @@
         <section>
             <section class="upSection">
                 <section>
-                    <h1 class="mainHeaders">Contact Me</h1>
+                    <h1 class="mainHeaders animate__animated animate__shakeY animate__infinite	infinite animate__slower 3s">Contact Me</h1>
                     <p>I am eager to gain hands-on experience in the field and contribute to the development of
                         innovative technology. If you have any opportunities available, such as internships or
                         entry-level positions, please feel free to contact me . I am a quick learner and a hard worker,
@@ -455,12 +469,13 @@
                         considering me as a candidate.</p>
                 </section>
                 <section>
-                    <div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                    </div>
+                    <form action="" class="contactForm">
+                       <textarea placeholder="subject"></textarea>
+                        <input type="text" placeholder="Your Name">
+                        <input type="Email" placeholder="Your Email">
+                        <input type="text" placeholder="Contact Number">
+                        <button type="submit">Send</button>
+                    </form>
                 </section>
             </section>
             <section class="downSection">
@@ -477,32 +492,32 @@
         <section>
             <div>
                 <a>
-            <img src="./assets/img/icons8-facebook-48.png" alt="">
-            <span>FaceBook</span>
+                    <img src="./assets/img/icons8-facebook-48.png" alt="">
+                    <span>FaceBook</span>
                 </a>
             </div>
         </section>
         <section>
             <div>
                 <a>
-            <img src="./assets/img/icons8-instagram-48.png" alt="">
-            <span>Instagram</span>
+                    <img src="./assets/img/icons8-instagram-48.png" alt="">
+                    <span>Instagram</span>
                 </a>
             </div>
         </section>
         <section>
             <div>
                 <a>
-            <img src="./assets/img/icons8-twitter-circled-48.png" alt="">
-                <span>Twitter</span>
+                    <img src="./assets/img/icons8-twitter-circled-48.png" alt="">
+                    <span>Twitter</span>
                 </a>
             </div>
         </section>
         <section>
             <div>
                 <a>
-            <img src="./assets/img/icons8-whatsapp-48.png" alt="">
-                <span>Whatsapp</span>
+                    <img src="./assets/img/icons8-whatsapp-48.png" alt="">
+                    <span>Whatsapp</span>
                 </a>
             </div>
         </section>
@@ -520,6 +535,27 @@
         <p><small>version 1.0.0</small></p>
     </div>
 </footer>
+<script src="assets/lib/jQuery/jquery-3.6.3.min.js"></script>
+<!--AOS Animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--AOS Animation INIT-->
+<script>
+    AOS.init();
+</script>
+
+<!--<script>
+
+$("#btnAboutMe").click(function (){
+    $("main>section").css("margin","10vh");
+    $("body>header").css("opacity","1");
+
+$("main>main").on("mouseleave",function (){
+    $("main>section").off();
+    $("main>section").css("margin","0");
+    $("main>section").css("transition","all 1s");
+});
+});
+</script>-->
 </body>
 
 </html>
