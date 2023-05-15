@@ -4,22 +4,7 @@
     flex-direction: column;
 
 }
-#page-4::before{
-    content: "";
-    background-image: url("../img/code2.gif");
-    background-repeat: no-repeat;
-    width: 35%;
-    height: 150px;
-    border-radius: 12px;
-    align-self: center;
-    background-size: cover;
-    box-shadow: 0 0 5px rgb(243, 6, 6);
-    transition: all 2s;
-    animation-name: image-pulse;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-}
+
 
 @keyframes image-pulse {
   to{
@@ -35,6 +20,7 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);
 }
 
 #page-4 .upSection {
@@ -186,6 +172,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);
 }
 
 #page-5 .upSection {

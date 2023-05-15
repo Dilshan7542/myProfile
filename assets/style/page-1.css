@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -17,7 +18,13 @@
     flex-wrap: wrap;
     border-radius: 25px;
     margin-top: 0;
-   
+
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.88), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation: animateFadeOutIn 5s linear infinite;
+    -webkit-text-fill-color: rgba(241, 241, 241, 0.89);
 
 }
 
@@ -47,6 +54,7 @@
     flex-direction: column;
     height: 70%;
     width: 100%;
+
 }
 
 
@@ -68,9 +76,38 @@
 
 #page-1 > section > section > article > div > h1 {
     font-size: 2.7rem;
+    font-weight: bold;
     letter-spacing: 2px;
     padding-left: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animateFadeOutIn 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 4px rgb(93, 93, 93);
 }
+#page-1 > section > section > article > div > h1:nth-child(1){
+    animation-delay: 1s;
+}
+#page-1 > section > section > article > div > h1:nth-child(2){
+    animation-delay: 2s;
+}
+#page-1 > section > section > article > div:hover h1{
+    background-size: 100%;
+    text-shadow: 0 0 1px #222526;
+    transition: all 2s;
+}
+@keyframes animateFadeOutIn {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
 
 #page-1 > section > section > article > div > h1:first-child {
     padding-top: 5%;
@@ -81,13 +118,55 @@
     margin: 0;
 }
 
-#page-1 > section > section > article > div p {
+.workArea p {
     margin: 0;
-    font-size: 1.7em;
+    font-size: 1.9em;
+    font-weight: bold;
     letter-spacing: 4px;
     font-family: 'Bebas Neue', cursive;
-}
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, rgb(247, 250, 253), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation-delay: 5s;
+    animation: animateFadeOutInPR 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    text-shadow: 0 0 10px #222526;
 
+
+}
+.workArea>p:nth-child(1){
+    animation-delay: 1s;
+}
+.workArea>p:nth-child(2){
+    animation-delay: 1.5s;
+}
+.workArea>p:nth-child(3){
+    animation-delay: 8s;
+}
+.workArea>p:nth-child(4){
+    animation-delay: 16s;
+}
+.workArea>p:nth-child(5){
+    animation-delay: 24s;
+}
+.workArea>p:nth-child(6){
+    animation-delay: 32s;
+}
+.workArea:hover p{
+    background-size: 100%;
+    text-shadow: 0 0 1px #222526;
+    transition: all 2s;
+}
+@keyframes animateFadeOutInPR {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
 
 #page-1 > section > .leftSection > section > section:nth-child(1) {
     display: flex;
@@ -127,33 +206,35 @@
 
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1) {
     width: 100px;
+    transition: all 2s;
 }
 
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2) {
     margin-left: 20px;
     width: 150px;
+    transition: all 2s;
 }
 
 #page-1 > section > section:nth-child(1) > section > section:nth-child(1) > div:hover {
     background: #03e9f4;
-    color: #050801;
-
+   -webkit-text-fill-color: black;
     box-shadow: 0 0 5px #03e9f4,
     0 0 25px #03e9f4,
     0 0 50px #03e9f4,
     0 0 50px #a902ef,
     0 0 50px #f40303,
     0 0 200px #03e9f4;
+
 }
 
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
     margin-right: 100px;
-    transition: margin-right 2s;
+    transition: all 2s;
 }
 
 #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2):hover {
     margin-left: 100px;
-    transition: margin-left 2s;
+    transition: all 2s;
 }
 
 
@@ -207,12 +288,18 @@
 #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:hover {
     border-color: #ffffff;
     transform: rotate(360deg);
-    box-shadow: 0 0 5px #03e9f4,
+    box-shadow: 0 0 5px #151a1a,
+    0 0 25px #070909,
+    0 0 50px #0d1111,
+    0 0 50px #130f15,
+    0 0 50px #171010,
+    0 0 200px #141c1c;
+  /*  box-shadow: 0 0 5px #03e9f4,
     0 0 25px #03e9f4,
     0 0 50px #03e9f4,
     0 0 50px #a902ef,
     0 0 50px #f40303,
-    0 0 200px #03e9f4;
+    0 0 200px #03e9f4;*/
     transition: all 2s;
 }
 

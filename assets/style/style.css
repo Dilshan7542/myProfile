@@ -20,7 +20,8 @@ a {
 
 }
 body{
-    background: #03001C;
+    background: whitesmoke;
+
 }
 /* width */
 ::-webkit-scrollbar {
@@ -51,7 +52,7 @@ body > header {
     position: fixed;
     width: 100%;
     height: 10vh;
-    background: rgba(4, 3, 28, 0.98);
+
     z-index: 10;
     opacity: 0.8;
 
@@ -71,6 +72,7 @@ body > header::after {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    display: none;
 }
 
 
@@ -98,11 +100,21 @@ header > nav > :last-child > ul li {
     display: inline-block;
     padding-top: 7px;
     padding-right: 15px;
+
+
 }
 
 header > nav > :last-child > ul li a {
-    color: white;
+    color: #000000;
+    text-shadow:0 0 10px whitesmoke,
+    0 0 15px whitesmoke,
+    0 0 15px whitesmoke,
+    0 0 15px whitesmoke,
+    0 0 15px whitesmoke;
     transition: all 2s;
+    letter-spacing: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -116,6 +128,7 @@ header > nav > :last-child > ul li a:hover {
     0 0 200px #f403e0;
     margin-left: 200px;
     transition: all 2s;
+    text-shadow:0 0 0px black;
 
 }
 body > main {
@@ -133,7 +146,7 @@ body > footer {
 main > main {
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.76);
+
     width: 100%;
     height: 100vh;
     align-items: end;
@@ -146,16 +159,15 @@ main>section{
     max-height: 100%;
     display: flex;
     border-radius: 25px;
-    background-color: black;
-    box-shadow: 0 0 10px #5f5fd5,0 0 5px #5f5fd5,0 0 5px #5f5fd5,0 0 5px #5f5fd5;
+ /*   background: linear-gradient(180deg, rgba(0,0,0,0.9836309523809523) 0%, rgba(255,255,255,1) 100%);*/
+    box-shadow: 0 0 10px #000000;
+    background: rgb(3,3,3);
+    background: linear-gradient(180deg, rgba(3,3,3,0.8071603641456583) 0%, rgba(250,250,250,0.9304096638655462) 100%);
+
     transition: all 2s !important;
 }
 main>section:hover{
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 20px #03e9f4,
-    0 0 20px #03e9f4,
-    0 0 20px #a902ef,
-    0 0 50px #f403e0;
+    box-shadow: 0 0 10px #000000,0 0 5px #040405,0 0 5px #010102,0 0 5px #000000;
     transition: all 2s;
 }
 .mainHeaders{
@@ -171,7 +183,7 @@ main>aside{
     margin: auto;
 }
 main>aside>section{
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color: rgba(255, 255, 255, 0);
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     margin: 10px;

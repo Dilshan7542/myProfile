@@ -14,6 +14,8 @@ $(window).on("load",function (){
    $("#loading").fadeOut(1000);
 });
 
+
+
 $("#page-1>section").click(function () {
 
     $(this).addClass("animate__infinite");
