@@ -147,7 +147,7 @@ main>section{
     display: flex;
     border-radius: 25px;
     background-color: black;
-    box-shadow: 0 0 5px #030ff4;
+    box-shadow: 0 0 10px #5f5fd5,0 0 5px #5f5fd5,0 0 5px #5f5fd5,0 0 5px #5f5fd5;
     transition: all 2s !important;
 }
 main>section:hover{

@@ -7,6 +7,8 @@
     <meta name="keywords" content="Dilshan,Maduranga,Software engineer">
     <meta name="description" content="My name is Dilshan Maduranga I am a software developer in Sri lanka">
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <!--    Loading Sheet-->
+    <link rel="stylesheet" href="assets/style/loading/loading.css">
         <!--Default all style sheet(ROOT)-->
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/normalize.css">
@@ -34,15 +36,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <!--Loading Text-->
+    <link href="http://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
     <!--/google font-END-->
 
         <!--AOS Animation-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Animation.CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <!--Hover-->
+    <link rel="stylesheet" href="assets/style/hover/hover-min.css"/>
 </head>
 <body id="particles-js">
+<aside id="loading">
+    <section>
+    <h1>
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </h1>
+    </section>
+</aside>
 <header id="header-home" >
     <nav>
         <div><img src="./assets/img/world.gif" alt="" width="10%"></div>
@@ -64,7 +82,7 @@
     <!--Page 1-->
     <main id="page-1">
         <!--Main Section-->
-        <section class="animate__animated">
+        <section class="animate__animated animate__bounceIn animate__slow">
             <!-- LeftSection -->
             <section class="leftSection">
                 <article>
@@ -150,7 +168,7 @@
         <!--Main Section-->
         <section data-aos="zoom-in">
             <section>
-                <div><h2>What I Can Do</h2></div>
+                <div><h2 class="animate__animated animate__shakeY animate__infinite	infinite animate__slower 3s">What I Can Do</h2></div>
                 <div></div>
             </section>
             <article>
@@ -175,7 +193,8 @@
     <!--Page 4-->
     <main id="page-4">
         <!--Main Section-->
-        <section>
+        <section data-aos="fade-right"
+                 data-aos-duration="3000">
             <!--Up Section-->
             <section class="upSection">
                 <h1 class="mainHeaders">Service</h1>
@@ -224,7 +243,8 @@
     <!--Page 5-->
     <main id="page-5">
         <!--Main Section-->
-        <section>
+        <section data-aos="fade-up"
+                 data-aos-duration="3000">
             <!--Up Section-->
             <section class="upSection">
                 <h1 class="mainHeaders">Skills</h1>
@@ -324,7 +344,8 @@
     <!--Page 6-->
     <main id="page-6">
         <!--Main Section-->
-        <section>
+        <section data-aos="fade-up"
+                 data-aos-duration="3000">
             <!--Up Section-->
             <section class="upSection">
                 <h1 class="mainHeaders">Project</h1>
@@ -430,7 +451,7 @@
     <!--Page 8-->
     <main id="page-8">
         <!--Main Section-->
-        <section>
+        <section data-aos="zoom-in">
             <section><h1 class="mainHeaders">Gallery</h1></section>
 
             <section class="gallerySection">
@@ -458,7 +479,7 @@
     <!--Page 9-->
     <main id="page-9">
         <!--Main Section-->
-        <section>
+        <section data-aos="zoom-in">
             <section class="upSection">
                 <section>
                     <h1 class="mainHeaders animate__animated animate__shakeY animate__infinite	infinite animate__slower 3s">Contact Me</h1>
@@ -543,19 +564,7 @@
     AOS.init();
 </script>
 
-<!--<script>
-
-$("#btnAboutMe").click(function (){
-    $("main>section").css("margin","10vh");
-    $("body>header").css("opacity","1");
-
-$("main>main").on("mouseleave",function (){
-    $("main>section").off();
-    $("main>section").css("margin","0");
-    $("main>section").css("transition","all 1s");
-});
-});
-</script>-->
+<script src="assets/js/profile.js"></script>
 </body>
 
 </html>
