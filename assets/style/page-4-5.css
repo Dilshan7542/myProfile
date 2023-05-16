@@ -1,7 +1,10 @@
 
 #page-4 {
+    display: flex!important;
     height: auto;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -18,7 +21,7 @@
     width:100%;
     height: 85vh;
     margin-top: 50px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);
 }
@@ -169,7 +172,6 @@
 
 
 #page-5 > section {
-    display: flex;
     flex-direction: column;
     width: 100%;
     background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);
