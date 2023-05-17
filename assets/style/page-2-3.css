@@ -11,7 +11,7 @@
 
 }
 #page-2 > section:hover {
-    box-shadow: 0 -5px 5px #ffffff,0 -5px 5px #ffffff;
+    box-shadow: 0 -5px 5px #ffffff;
 }
 
 #page-2 .upSection {
@@ -67,6 +67,7 @@
     height: 100%;
     flex-grow: 1;
     font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
 }
 
 
@@ -87,7 +88,12 @@
     margin-bottom: 3%;
     text-shadow: white;
 }
-
+#page-2 .downSection > section:last-child > article > p:hover{
+    font-size: 1.1em;
+    transition: all 1s;
+    font-weight: bold;
+    text-shadow:0 0 2px #000000;
+}
 
 /*====================================================================================== PAGE-3*/
 
@@ -110,8 +116,9 @@
 
 }
 #page-3 > section:hover {
-    box-shadow: 0 5px 5px #ffffff;
+    box-shadow: 0 2px 4px whitesmoke;
 }
+
 
 
 #page-3 > section > section {
@@ -162,6 +169,11 @@
     color: #ffffff;
     text-shadow: 0 0 10px rgb(0, 0, 0);
 
+}
+#page-3 > section > article p:hover{
+    font-size: 1.25em;
+    color: #b81aec !important;
+    transition: all 2s;
 }
 
 #page-3 > section > article > p:nth-child(odd) {

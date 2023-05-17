@@ -81,12 +81,13 @@ body > header::after {
 
 /*HEADER ARIA START..*/
 header > nav {
-    position: relative;
+ display: flex;
+    justify-content: center;
 }
 
 
 header > nav > div {
-    position: absolute;
+
 }
 
 header > nav > div:nth-child(1) {
@@ -107,8 +108,7 @@ header > nav > :last-child > ul li {
 
 header > nav > :last-child > ul li a {
     color: #ffffff;
-    text-shadow:0 0 5px #000000,
-    0 0 5px #000000;
+    text-shadow:0 0 5px #000000;
     transition: all 2s;
     letter-spacing: 5px;
     font-size: 1.2em;
@@ -124,9 +124,10 @@ header > nav > :last-child > ul li a:hover {
     0 0 50px #03e9f4,
     0 0 50px #a902ef,
     0 0 200px #f403e0;
-    margin-left: 200px;
-    transition: all 2s;
-    text-shadow:0 0 0px black;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    transition: all 1.5s;
+    text-shadow:0 0 0 black;
 
 }
 body > main {
@@ -166,10 +167,25 @@ main>section{
 }
 main>section:hover{
     box-shadow: 0 0 10px whitesmoke,0 0 10px whitesmoke,0 0 20px whitesmoke;
-    transition: all 2s;
+    transition: all 1s;
 }
 .mainHeaders{
 letter-spacing: 20px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #070707, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animateFadeOutInHeader 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+@keyframes animateFadeOutInHeader {
+    0% {
+        background-position: -400%;
+    }
+    100% {
+        background-position: 400%;
+    }
 }
 main>aside{
     position: fixed;

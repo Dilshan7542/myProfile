@@ -13,7 +13,6 @@ $("#btnAboutMe").click(function (){
 $(window).on("load",function (){
    $("#loading").fadeOut(1000);
 
-
 });
 
 
@@ -25,8 +24,8 @@ $("#page-1>section").click(function () {
 
 
 });
-$("#serviceSection div").on("mouseenter",function () {
-    $(this).addClass("hvr-buzz-out");
+$("#serviceSection>section>div").on("mouseenter",function () {
+    $(this).addClass("hvr-pulse-grow");
 });
 
 

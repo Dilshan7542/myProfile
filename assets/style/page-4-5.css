@@ -109,15 +109,14 @@
     font-family: 'Goldman', cursive;
     font-size: 1.5em;
     text-align: center;
-    color: rgba(255, 0, 0, 0.8);
+    color: rgba(0, 60, 255, 0.96);
     margin: 0;
 }
 
 #page-4 .downSection #serviceSection section > div:hover {
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 15px #f403f0,
-    0 0 15px #a902ef,
-    0 0 15px #f403e0;
+    box-shadow:0 0 10px #e70202,
+    0 0 10px #e70202,
+    0 0 10px #e70202;
     transition: box-shadow 2s;
 }
 #page-4 .downSection #serviceSection section > div:hover h4{
@@ -249,9 +248,12 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 5px blue;
-
-
+    font-family: 'Roboto Mono', monospace;
 }
+#page-5 .skillSection > section > div>:first-child{
+    height: 50%;
+}
+
 
 #page-5 .skillSection > section > div:hover {
     box-shadow: 0 0 15px #03e9f4,
@@ -261,6 +263,10 @@
     0 0 15px #f403e0;
     transition: all 2s;
 }
+#page-5 .skillSection > section > div>:last-child{
+
+}
+
 
 #page-5 .downSection {
     margin-top: 100px;
