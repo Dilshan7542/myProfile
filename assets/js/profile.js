@@ -28,4 +28,3 @@ $("#serviceSection>section>div").on("mouseenter",function () {
    /* $(this).addClass("hvr-pulse-grow");*/
 });
 
-

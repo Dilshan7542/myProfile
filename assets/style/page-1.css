@@ -19,53 +19,55 @@
     overflow: hidden;
 
    /* background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgba(0, 0, 0, 0.7));*/
-    background: linear-gradient(to right ,white 0%, rgb(0, 0, 0) 70%);
+    background: linear-gradient(to right ,rgba(86, 4, 11, 0.93) 0%, rgb(0, 0, 0) 60%);
+
 
     transform: perspective(200vw) rotateY(10deg);
 }
 #page-1 > section:hover {
-    box-shadow: 4px 0 10px whitesmoke;
+    box-shadow: 5px 0 10px whitesmoke;
+    margin-right: 20px;
     transform: perspective(200vw) rotateY(0deg);
 
 }
-#page-1 > section:hover span{
+/*#page-1 > section:hover span{
    opacity: 0.0;
     transition: all 2s;
-}
-#page-1 > section>span{
+}*/
+/*#page-1 > section>span{
     position: absolute;
     transition: all 1s;
 }
 #page-1 > section>span:nth-of-type(1){
     top: 0;
    left: 0;
-    height: 2px;
+    height: 4px;
     width: 100%;
-    background:linear-gradient(to right,transparent, rgba(255, 0, 59, 0.48));
+    background:linear-gradient(to right,transparent, rgb(227, 2, 207));
     animation: spanXR 4s linear infinite;
 }
 #page-1 > section>span:nth-of-type(2){
     top: 0;
    right: 0;
     height: 100%;
-    width: 2px;
-    background:linear-gradient(to bottom,transparent, rgba(255, 0, 59, 0.48));
+    width: 4px;
+    background:linear-gradient(to bottom,transparent, rgb(255, 0, 0));
     animation: spanYB 4s linear infinite 2s;
 }
 #page-1 > section>span:nth-of-type(3){
    bottom: 0;
     right: 0;
-    height: 2px;
+    height: 4px;
     width: 100%;
-    background:linear-gradient(to left,transparent, rgba(255, 0, 59, 0.48));
+    background:linear-gradient(to left,transparent, rgb(252, 252, 252));
     animation: spanXL 4s linear infinite;
 }
 #page-1 > section>span:nth-of-type(4){
     bottom: 0;
    left: 0;
     height: 100%;
-    width: 2px;
-    background:linear-gradient(to top,transparent, rgba(255, 0, 59, 0.48));
+    width: 4px;
+    background:linear-gradient(to top,transparent, #0002fa);
     animation: spanYT 4s linear infinite 2s;
 }
 @keyframes spanXR {
@@ -103,7 +105,7 @@
         transform: translateY(-100%);
 
     }
-}
+}*/
 
 /*left-section*/
 #page-1 > section > .leftSection {
@@ -155,25 +157,19 @@
     font-weight: bold;
     letter-spacing: 2px;
     padding-left: 0;
-    overflow: hidden;
-    background: linear-gradient(to left, #fd0000, #000000,white);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animateFadeOutIn 10s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
-    transition: all 1s;
+    color: rgba(245, 245, 245, 0.67);
+    transition: all 2s;
 
 }
 #page-1 > section > section > article > div > h1:nth-child(1){
     animation-delay: 1s;
 }
 #page-1 > section > section > article > div > h1:nth-child(2){
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
 #page-1 > section > section > article > div:hover h1{
     background-size: 100%;
-    text-shadow: 0 0 1px #222526;
+    color: rgba(245, 245, 245, 0.82);
     transition: all 2s;
 }
 @keyframes animateFadeOutIn {
@@ -202,11 +198,11 @@
     letter-spacing: 10px;
     font-family: 'Bebas Neue', cursive;
     overflow: hidden;
-    background: linear-gradient(to left, rgb(0, 0, 0), rgb(252, 0, 0));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
     background-repeat: no-repeat;
     background-size: 80%;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0);
     animation-delay: 5s;
     animation: animateFadeOutInPR 5s linear infinite;
     transition: all 2s;
@@ -232,7 +228,7 @@
 }
 .workArea:hover p{
     background-size: 100%;
-    text-shadow: 0 0 1px #222526;
+   color: rgba(255, 255, 255, 0.85);
     transition: all 2s;
 }
 @keyframes animateFadeOutInPR {

@@ -20,7 +20,7 @@ a {
 
 }
 body{
-    background: #000000;
+    background:black;
 
 }
 /* width */
@@ -161,23 +161,24 @@ main>section{
  /*   background: linear-gradient(180deg, rgba(0,0,0,0.9836309523809523) 0%, rgba(255,255,255,1) 100%);*/
 
     background: rgb(3,3,3);
-    background: linear-gradient(180deg, rgba(3,3,3,0.8071603641456583) 0%, rgba(250,250,250,0.9304096638655462) 100%);
+
 
     transition: all 2s !important;
 }
 main>section:hover{
-    box-shadow: 0 0 10px whitesmoke,0 0 10px whitesmoke,0 0 10px whitesmoke;
-    transition: all 1s;
+   /* box-shadow: 0 0 5px whitesmoke,0 0 5px whitesmoke,0 0 5px whitesmoke;*/
+    transition: all 2s;
 }
 .mainHeaders{
 letter-spacing: 20px;
-    overflow: hidden;
+    color: rgba(245, 245, 245, 0.72);
+/*    overflow: hidden;
     background: linear-gradient(90deg, #070707, #fff, #000);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 100%;
     animation: animateFadeOutInHeader 4s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);*/
 }
 @keyframes animateFadeOutInHeader {
     0% {
@@ -195,6 +196,7 @@ main>aside{
     height: max-content;
     top: 0;
     margin: auto;
+    z-index: 100;
 }
 main>aside>section{
     background-color: rgba(255, 255, 255, 0);
