@@ -1,21 +1,24 @@
 
 #page-8 {
-
-    overflow: hidden;
+justify-content: center;
+    align-items: center;
 }
 
 
 #page-8 > section {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 80%;
+    z-index: 1;
 }
-
+#page-8 > section:hover {
+    box-shadow: 0 -2px 5px whitesmoke;
+}
 #page-8 .gallerySection {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 80%;
+    height: 70%;
     justify-content: center;
 
 }
@@ -33,6 +36,7 @@
     flex-direction: column;
     flex-grow: 1;
     height: 100%;
+
 }
 
 #page-8 .gallerySection > section > section > figure {
@@ -46,8 +50,16 @@
     height: 100%;
     padding: 1%;
     cursor: pointer;
+    z-index: 2;
 
 
+
+
+}
+#page-8 .gallerySection > section > section > figure:hover{
+    transform: scale(2);
+    align-self: center !important;
+    transition: all 1s;
 }
 
 #page-8 .gallerySection .row-1 > figure:first-child {
@@ -60,6 +72,7 @@
 
 #page-8 h4 {
     cursor: pointer;
+    color: black;
     text-align: center;
 }
 

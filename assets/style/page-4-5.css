@@ -65,7 +65,7 @@
     flex-direction: column;
     background-color: rgba(253, 253, 253, 0.85);
     border-radius: 20px;
-    box-shadow: 0 0 10px rgb(0, 95, 208);
+
 }
 
 #page-4 .downSection > section > aside {
@@ -101,8 +101,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 5px blue;
-
+    transform: perspective(100px) rotateY(-2deg);
+    box-shadow:0 0 10px #0cc1d2,
+    0 0 10px #07b7e0,
+    0 0 10px #0996ec;
 }
 
 #page-4 .downSection #serviceSection section > div > h4 {
@@ -117,7 +119,8 @@
     box-shadow:0 0 10px #e70202,
     0 0 10px #e70202,
     0 0 10px #e70202;
-    transition: box-shadow 2s;
+    transform: perspective(100px) rotateY(5deg);
+    transition: all 2s;
 }
 #page-4 .downSection #serviceSection section > div:hover h4{
     color: white;
@@ -190,7 +193,7 @@
 #page-5 .upSection > section {
     align-self: center;
     width: 90%;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     background-color: rgba(255, 255, 255, 0.81);
     justify-content: center;
@@ -200,8 +203,9 @@
 
 #page-5 .skillSection {
     width: 100%;
-    height: 95%;
+    height: 90%;
     overflow-x: scroll;
+    z-index: 1;
 
 }
 
@@ -230,10 +234,12 @@
 
 #page-5 .skillSection > section {
     width: max-content;
-    height: 90%;
+    height: 95%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
+    z-index: 2;
 
 
 }
@@ -241,14 +247,23 @@
 #page-5 .skillSection > section > div {
     width: 15.88vw;
     padding-top: 10px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 20px;
     margin: 10px;
     display: flex;
+    height: 85%;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 5px blue;
     font-family: 'Roboto Mono', monospace;
+
+}
+#page-5 .skillSection > section > div:nth-child(1){
+    margin-left: 0.4%;
+}
+
+#page-5 .skillSection > section > div>:nth-child(2){
+    font-size: 1.2em;
 }
 #page-5 .skillSection > section > div>:first-child{
     height: 50%;
@@ -256,17 +271,15 @@
 
 
 #page-5 .skillSection > section > div:hover {
-    box-shadow: 0 0 15px #03e9f4,
-    0 0 15px #03e9f4,
-    0 0 15px #03e9f4,
-    0 0 15px #a902ef,
-    0 0 15px #f403e0;
+    box-shadow: 0 0 10px #03e9f4,
+    0 0 10px #03e9f4,
+    0 0 10px #03e9f4,
+    0 0 10px #a902ef,
+    0 0 10px #f403e0;
+
+    transform: perspective(100px) rotateY(5deg);
     transition: all 2s;
 }
-#page-5 .skillSection > section > div>:last-child{
-
-}
-
 
 #page-5 .downSection {
     margin-top: 100px;
@@ -275,12 +288,7 @@
     align-items: flex-end;
 }
 
-#page-5 .downSection > div {
-    background-image: url("../img/5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
 
 
 

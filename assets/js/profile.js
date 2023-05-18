@@ -25,7 +25,7 @@ $("#page-1>section").click(function () {
 
 });
 $("#serviceSection>section>div").on("mouseenter",function () {
-    $(this).addClass("hvr-pulse-grow");
+   /* $(this).addClass("hvr-pulse-grow");*/
 });
 
 

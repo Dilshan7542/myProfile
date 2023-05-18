@@ -30,7 +30,7 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #000000;
+    background-color: #1b1c21;
 
 }
 
@@ -54,7 +54,7 @@ body > header {
     position: fixed;
     width: 100%;
     height: 10vh;
-    z-index: 10;
+    z-index: 1;
     opacity: 0.8;
 
 }
@@ -166,7 +166,7 @@ main>section{
     transition: all 2s !important;
 }
 main>section:hover{
-    box-shadow: 0 0 10px whitesmoke,0 0 10px whitesmoke,0 0 20px whitesmoke;
+    box-shadow: 0 0 10px whitesmoke,0 0 10px whitesmoke,0 0 10px whitesmoke;
     transition: all 1s;
 }
 .mainHeaders{
