@@ -32,21 +32,22 @@
     }
 
     .mainHeaders {
-        margin-top: 15vh;
-        font-size: 1.5em;
+        font-size: 1.4em;
         text-align: center;
-        padding-left: 0 !important;
+        padding-left: 0;
 
+
+    }
+    header > nav > :last-child > ul li a{
+        font-size: 1em !important;
     }
 
     header > nav > :last-child > ul li a:hover {
-        margin-left: 5px;
+        margin-left: 5px !important;
         transition: all 4s;
     }
 
-    main > main {
-        height: max-content;
-    }
+
     main>aside>section{
         width: 30vw;
         right: -23vw;
@@ -63,9 +64,7 @@
         width: 5vw;
     }
 
-    header > nav > div:nth-child(1) {
-        padding: 15px;
-    }
+
 
     header > nav > :last-child > ul {
         display: flex;
@@ -73,10 +72,22 @@
         justify-content: center;
 
     }
-
+    header > nav > :last-child > ul a{
+        font-size: 1em;
+    }
+    main>section{
+        width: 97%;
+        height: 84%;
+    }
     /*PAGE- STYLE=========================*/
     #page-1 {
-        height: 100vh;
+        height: 85vh;
+        margin-top: 15vh;
+    }
+    #page-1 >section{
+        box-shadow: 1px 1px 4px whitesmoke;
+        transform: perspective(200vw) rotateY(0deg);
+        margin-right: 0;
     }
 
     #page-1 > section > .leftSection {
@@ -88,41 +99,37 @@
     }
 
     #page-1 > section > section > article {
-        height: 50%;
+        height: 60% !important;
     }
 
     #page-1 > section > .leftSection > section {
-        height: 50%;
+        height: 40%;
     }
 
-    #page-1 > section > section > article > div:nth-child(1) {
-        align-self: center;
+    #page-1 > section > section > article > div {
+        align-self: center !important;
     }
+
 
     #page-1 > section > section > article > div > h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
+        text-align: center;
     }
 
     #page-1 > section > section > article > div p {
-        padding-top: 20px;
+        padding-top: 10px;
         font-size: 1.4rem;
+        letter-spacing: 5px;
+        text-align: center;
     }
 
     #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1) {
-        width: 70px;
+        width: 70px!important;
     }
 
     #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2) {
-        margin-left: 15px;
-        width: 120px;
-    }
-
-    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(1):hover {
-        margin-right: 50px;
-    }
-
-    #page-1 > section > .leftSection > section > section:nth-child(1) > div:nth-child(2):hover {
-        margin-left: 50px;
+        margin-left: 15px!important;
+        width: 120px!important;
     }
 
     #page-1 > section > .leftSection > section > section:nth-child(2) {
@@ -131,35 +138,54 @@
     }
 
     #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div {
-        width: 15vw;
+        width: 15vw ;
         height: 15vw;
     }
 
     /*PAGE TOW STYLE======================*/
+
+    #page-2{
+        height: auto;
+    }
+    #page-2 >section{
+        margin-top: 16vh;
+        box-shadow: -1px -1px 4px #ffffff;
+        height: 105vh;
+    }
     #page-2 .downSection {
         font-size: 12px;
-        height: 150vh;
+        height:150vh;
 
     }
-
-    #page-2 .downSection > section:first-child {
-        margin-bottom: 20px;
+    #page-2 .downSection > section:first-child{
+        padding-left: 0;
     }
-
     #page-2 .downSection > section:first-child h4 {
-        padding-left: 4%;
+        padding-left: 9%;
         font-size: 1.3em;
+        margin: 5px;
     }
 
     #page-2 .downSection > section:first-child h3 {
-        padding-left: 11%;
+        padding-left: 10%;
+        margin: 5px;
+    }
+    #page-2 .downSection > section:last-child>:first-child{
+        width: 40%;
+    }
+
+    #page-2 .downSection > section:last-child>:last-child{
+        width: 60%;
+    }
+    #page-2 .downSection > section:last-child > aside{
+        height: 60%;
     }
 
     #page-2 .downSection > section:last-child > aside > div {
         padding-bottom: 220%;
         background-position-x: 69% !important;
         width: 110% !important;
-        margin-left: 15% !important;
+        margin-left: 10% !important;
     }
 
     #page-2 .downSection > section:last-child > article > p {
@@ -173,13 +199,14 @@
     }
     #page-2 .downSection > section:last-child > article > p:nth-child(3) {
         position: relative;
-        right: 40%;
+        right: 62%;
+        top: 2%;
         width: 90vw;
     }
 
     #page-2 .downSection > section:last-child > article > p:nth-child(4) {
         position: relative;
-        right: 40%;
+        right: 62%;
         margin-top: 20px;
         width: 90vw;
         margin-bottom: 50px;
@@ -187,13 +214,25 @@
 
 
     /*PAGE 3 STYLE======================*/
+    #page-3{
+        height: auto;
+    }
+    #page-3>section{
+        margin-top: 16vh;
+        box-shadow: 0 0 4px whitesmoke;
+    }
+    #page-3 > section > section > div{
+        font-size: 1.1em;
+    }
     #page-3 > section > article {
         font-size: 12px;
         align-content: center;
+        flex-wrap: nowrap;
     }
 
     #page-3 > section > article > p {
         text-align: center;
+        font-size: 2em;
         margin-bottom: 25px !important;
     }
 
@@ -204,6 +243,11 @@
     }
 
     /*PAGE 4 STYLE======================*/
+    #page-4>section{
+        box-shadow: -1px -1px 4px whitesmoke;
+        margin-top: 16vh;
+        width: 97% !important;
+    }
     #page-4 .upSection > div {
         width: 80% !important;
         height: 100px !important;
@@ -216,11 +260,11 @@
 
     #page-4 .downSection {
         width: 100%;
-        height: 60vh;
+        height: 100%;
     }
 
     #page-4 .downSection > section {
-        width: 70% !important;
+        width: 80% !important;
         display: flex;
         flex-direction: column;
     }
@@ -243,28 +287,33 @@
         flex-direction: column !important;
         flex-wrap: wrap !important;
     }
-
-    #page-4 .downSection .serviceSection section > div {
-        margin: 10px !important;
+    #page-4 .downSection #serviceSection section > div {
+        margin: 12px !important;
         /*   width: 62% !important;*/
         width: 58vw !important;
         height: 45% !important;
+        display: none;
 
     }
-
-    #page-4 .downSection .serviceSection section > div:hover {
-        box-shadow: 0 0 5px #03e9f4,
-        0 0 10px #e30ddf,
-        0 0 10px #f403f0,
-        0 0 10px #a902ef,
-        0 0 10px #f403e0 !important;
-        transition: all 2s !important;
+    #page-4 .downSection #serviceSection section > div:nth-child(1),
+    #page-4 .downSection #serviceSection section > div:nth-child(2){
+      display: flex;
     }
+
+
 
 
     /*PAGE 5 AND PAGE 6 STYLE======================*/
+    #page-5>section{
+        box-shadow: 2px -1px 4px whitesmoke;
+        width: 97%;
+    }
+    #page-5 .upSection > section {
+        width: 80%;
+    }
     #page-5 .skillSection > section > div, #page-6 .downSection > section > section > section > div {
-        width: 65vw !important;
+        width: 75vw !important;
+        margin-left: 0.33% !important;
 
     }
     #page-6{

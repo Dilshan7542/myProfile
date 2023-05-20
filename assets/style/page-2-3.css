@@ -1,6 +1,6 @@
 
 #page-2 {
-    height: 99vh;
+    height: 100vh;
 
 }
 
@@ -46,7 +46,7 @@
 #page-2 .downSection > section:first-child h4, h3 {
     margin: 0;
     font-family: 'Goldman', cursive;
-    color: rgba(255, 255, 255, 0.96);
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1.7em;
 
 }
@@ -127,13 +127,12 @@
 }
 
 #page-3 > section > article {
-    height: 70%;
+    height: 80%;
     font-size: 1.4em;
     display: flex;
     flex-wrap: wrap;
     align-self: center;
     flex-direction: column;
-    justify-content: space-between;
     width: 80%;
 
 }
@@ -148,26 +147,26 @@
 
 #page-3 > section > section > div > h2 {
     text-align: center;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.82);
     text-shadow:0 0 20px #d6fcfc !important;
 }
 
 
 #page-3 > section > article p {
-    margin: 0;
+    margin: 5px;
     /*text-shadow: 0 0 5px whitesmoke;*/
     font-weight: bold;
     font-family: 'Goldman', cursive;
     letter-spacing: 4px;
     font-size: 1.1em;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.77);
+
 
 }
 
 
 #page-3 > section > article > p:nth-child(odd) {
-    color: rgba(0, 82, 255, 0.74);
+
 
 }
 

@@ -5,7 +5,7 @@
 
 
 *, *::after, ::before {
-    color: white;
+    color: rgba(255, 255, 255, 0.87);
     box-sizing: border-box;
 
 }
@@ -121,9 +121,7 @@ header > nav > :last-child > ul li a:hover {
     background: rgba(3, 233, 244, 0.75);
     box-shadow: 0 0 5px #03e9f4,
     0 0 50px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 50px #a902ef,
-    0 0 200px #f403e0;
+    0 0 50px #03e9f4;
     margin-left: 4vw;
     margin-right: 4vw;
     transition: all 1.5s;
