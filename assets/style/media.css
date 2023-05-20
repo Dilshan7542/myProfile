@@ -38,6 +38,9 @@
 
 
     }
+    header > nav > :last-child > ul{
+        margin: 0;
+    }
     header > nav > :last-child > ul li a{
         font-size: 1em !important;
     }
@@ -82,7 +85,7 @@
     /*PAGE- STYLE=========================*/
     #page-1 {
         height: 85vh;
-        margin-top: 15vh;
+        margin-top: 12vh;
     }
     #page-1 >section{
         box-shadow: 1px 1px 4px whitesmoke;
