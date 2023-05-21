@@ -43,6 +43,7 @@
     }
     header > nav > :last-child > ul li a{
         font-size: 1em !important;
+        letter-spacing: 1px;
     }
 
     header > nav > :last-child > ul li a:hover {
@@ -85,7 +86,7 @@
     /*PAGE- STYLE=========================*/
     #page-1 {
         height: 85vh;
-        margin-top: 12vh;
+        margin-top: 8vh;
     }
     #page-1 >section{
         box-shadow: 1px 1px 4px whitesmoke;
@@ -151,17 +152,20 @@
         height: auto;
     }
     #page-2 >section{
-        margin-top: 16vh;
+        margin-top: 8vh;
         box-shadow: -1px -1px 4px #ffffff;
         height: 105vh;
     }
     #page-2 .downSection {
         font-size: 12px;
-        height:150vh;
+        height: 100%;
+
 
     }
     #page-2 .downSection > section:first-child{
         padding-left: 0;
+        height: 14%;
+        margin-bottom: 1%;
     }
     #page-2 .downSection > section:first-child h4 {
         padding-left: 9%;
@@ -185,7 +189,7 @@
     }
 
     #page-2 .downSection > section:last-child > aside > div {
-        padding-bottom: 220%;
+
         background-position-x: 69% !important;
         width: 110% !important;
         margin-left: 10% !important;
@@ -221,7 +225,7 @@
         height: auto;
     }
     #page-3>section{
-        margin-top: 16vh;
+        margin-top: 12vh;
         box-shadow: 0 0 4px whitesmoke;
     }
     #page-3 > section > section > div{
@@ -314,9 +318,12 @@
     #page-5 .upSection > section {
         width: 80%;
     }
+    #page-5 .skillSection > section {
+        margin-left: 25px;
+    }
     #page-5 .skillSection > section > div, #page-6 .downSection > section > section > section > div {
-        width: 75vw !important;
-        margin-left: 0.33% !important;
+        width: 55vw !important;
+        margin-left: 0 !important;
 
     }
     #page-6{
