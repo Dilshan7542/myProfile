@@ -135,6 +135,7 @@
     background-size: contain;
     cursor: pointer;
     transition: all 2s;
+    display: none;
 }
 
 #page-4 .downSection > section > aside > div:hover {
@@ -149,11 +150,11 @@
 }
 
 #page-4 .downSection > section > aside > div:first-child:hover {
-    width: 40%;
+    width:5%;
 }
 
 #page-4 .downSection > section > aside > div:last-child:hover {
-    width: 40%;
+    width: 5%;
 }
 
 #page-4 .downSection > section > aside > div:first-child {
@@ -254,6 +255,7 @@
     align-items: center;
     box-shadow: 0 0 5px blue;
     font-family: 'Roboto Mono', monospace;
+    transform: perspective(100px) rotateY(-2deg);
     transition: all 2s;
 
 }
@@ -276,7 +278,7 @@
     0 0 10px #a902ef,
     0 0 10px #f403e0;
 
-    transform: perspective(100px) rotateY(5deg);
+    transform: perspective(100px) rotateY(4deg);
     transition: all 2s;
 }
 

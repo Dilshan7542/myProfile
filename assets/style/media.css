@@ -18,6 +18,9 @@
 }
 
 @media all and (min-width: 100px) and (max-width: 450px) {
+    body>aside>section> h1>span {
+        font-size: 3rem;
+    }
 
     body > header {
         height: 12vh;
@@ -305,6 +308,9 @@
     #page-4 .downSection #serviceSection section > div:nth-child(1),
     #page-4 .downSection #serviceSection section > div:nth-child(2){
       display: flex;
+    }
+    #page-4 .downSection > section > aside > div {
+        display: flex;
     }
 
 
