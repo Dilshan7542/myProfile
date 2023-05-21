@@ -23,6 +23,9 @@
         height: 12vh;
         z-index: 10;
     }
+    body > header >nav{
+        background: #000000ab;
+    }
 
     body > header::after {
         box-shadow: 0 0 20px #e52f2f, 0 0 20px #f10909;
@@ -93,6 +96,11 @@
         transform: perspective(200vw) rotateY(0deg);
         margin-right: 0;
     }
+    #page-1 >section:hover{
+        box-shadow: 1px 1px 4px whitesmoke;
+         margin-right: 0;
+        transform: perspective(200vw) rotateY(0deg);
+    }
 
     #page-1 > section > .leftSection {
         width: 100% !important;
@@ -149,12 +157,13 @@
     /*PAGE TOW STYLE======================*/
 
     #page-2{
-        height: auto;
+        height: 100vh;
+        align-items: center;
     }
     #page-2 >section{
         margin-top: 8vh;
         box-shadow: -1px -1px 4px #ffffff;
-        height: 105vh;
+        height: 90%;
     }
     #page-2 .downSection {
         font-size: 12px;
@@ -166,58 +175,46 @@
         padding-left: 0;
         height: 14%;
         margin-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     #page-2 .downSection > section:first-child h4 {
-        padding-left: 9%;
+            text-align: center;
         font-size: 1.3em;
         margin: 5px;
     }
 
     #page-2 .downSection > section:first-child h3 {
-        padding-left: 10%;
+     text-align: center;
         margin: 5px;
+
+    }
+    #page-2 .downSection > section:last-child{
+        justify-content: center;
     }
     #page-2 .downSection > section:last-child>:first-child{
-        width: 40%;
+        display: none;
     }
 
     #page-2 .downSection > section:last-child>:last-child{
-        width: 60%;
+        width: 80%;
+        margin: 0;
     }
     #page-2 .downSection > section:last-child > aside{
         height: 60%;
     }
 
-    #page-2 .downSection > section:last-child > aside > div {
-
-        background-position-x: 69% !important;
-        width: 110% !important;
-        margin-left: 10% !important;
-    }
-
     #page-2 .downSection > section:last-child > article > p {
         margin: 5px;
-        margin-right: 20% !important;
-    }
-    #page-2 .downSection > section:last-child > article > p:nth-child(1),
-    #page-2 .downSection > section:last-child > article > p:nth-child(2)
-    {
-        margin-left: 10% !important;
-    }
-    #page-2 .downSection > section:last-child > article > p:nth-child(3) {
-        position: relative;
-        right: 62%;
-        top: 2%;
-        width: 90vw;
+        margin-right: 10% !important;
+        margin-left: 10%;
+        text-align: center;
+        color: rgba(245, 245, 245, 0.87);
     }
 
-    #page-2 .downSection > section:last-child > article > p:nth-child(4) {
-        position: relative;
-        right: 62%;
-        margin-top: 20px;
-        width: 90vw;
-        margin-bottom: 50px;
-    }
+
 
 
     /*PAGE 3 STYLE======================*/
@@ -225,11 +222,14 @@
         height: auto;
     }
     #page-3>section{
+        width: 97%;
         margin-top: 12vh;
         box-shadow: 0 0 4px whitesmoke;
     }
-    #page-3 > section > section > div{
-        font-size: 1.1em;
+    #page-3 > section > section > div> h2{
+        font-size: 1em;
+        color: rgb(213 13 13 / 82%);
+        text-shadow: 0 0 20px #ff0b0b !important;
     }
     #page-3 > section > article {
         font-size: 12px;
@@ -239,14 +239,14 @@
 
     #page-3 > section > article > p {
         text-align: center;
-        font-size: 2em;
+        font-size: 1.7em;
         margin-bottom: 25px !important;
     }
 
 
 
     #page-3 > section > article > p:nth-child(even) {
-        color: rgba(255, 255, 255, 0.59);
+        color: rgb(2, 8, 255);
     }
 
     /*PAGE 4 STYLE======================*/
