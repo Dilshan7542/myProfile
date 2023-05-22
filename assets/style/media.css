@@ -366,11 +366,35 @@
     }
 
     /*PAGE 8 STYLE(Gallery)======================*/
+    #page-8 > section {
+        align-items: center;
+    }
     #page-8 .gallerySection > section{
-        width: 90% !important;
+        width: 80% !important;
     }
 
     /*PAGE 9 STYLE (Contract Me)======================*/
+    #page-9{
+        height: 200vh;
+        align-items: center;
+    }
+    #page-9>section{
+        flex-direction: column;
+    }
+    #page-9 section .downSection{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #page-9 section .downSection::before{
+        display: none;
+    }
+    #page-9 section .downSection>section{
+        height: 40%;
+        width: 100%;
+
+    }
 
     #page-9 .mainHeaders{
         align-self: center;
@@ -380,6 +404,24 @@
         font-size: 16px!important;
     }
 
+
+    /*FOOTER STYLE ====================*/
+
+
+   body>footer{
+        justify-content: center;
+       height: auto;
+       text-align: center;
+    }
+    body>footer>section{
+        align-self: center !important;
+    }
+    body>footer>section:nth-child(2){
+        order: 1;
+    }
+    body>footer>section:nth-child(4){
+        order: 1;
+    }
 
 
 

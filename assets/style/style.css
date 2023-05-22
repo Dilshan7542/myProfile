@@ -30,7 +30,7 @@ body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: #1b1c21;
+    background-color: rgba(63, 1, 1, 0.72);
 
 }
 
@@ -66,7 +66,6 @@ body > header::after {
     position: absolute;
     width: 85%;
     left: 5%;
-    box-shadow: 0 0 20px #ffffff, 0 0 20px #ebf0f1;
     background-color: rgba(255, 255, 255, 0.56);
     transition: all 10s;
     animation-name: mainTopShadow-hover;

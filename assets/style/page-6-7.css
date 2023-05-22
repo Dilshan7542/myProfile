@@ -4,13 +4,11 @@
 }
 
 
-
-
 #page-6 > section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0,0,0,1) 81%);
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0, 0, 0, 1) 81%);
 }
 
 #page-6 > section > .upSection {
@@ -98,11 +96,13 @@
     background-color: black;
     border: black solid 2px;
 }
-#page-6 .downSection > section > section > section > div>a{
+
+#page-6 .downSection > section > section > section > div > a {
     width: 100%;
     height: 100%;
 }
-#page-6 .downSection > section > section > section > div img{
+
+#page-6 .downSection > section > section > section > div img {
     border-radius: 20px;
     width: 100%;
     height: 100%;
@@ -111,10 +111,9 @@
 /* PAGE -7 ================================>*/
 
 #page-7 {
-justify-content: center;
+    justify-content: center;
     align-items: center;
 }
-
 
 
 #page-7 > section {
@@ -123,13 +122,15 @@ justify-content: center;
     align-items: center;
     width: 100%;
     height: 80%;
- /*   background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);*/
-    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0,0,0,1) 81%);
-   /* background: linear-gradient(to right , #000000 0%, rgb(62, 11, 91));*/
+    /*   background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(250,250,250,0.9304096638655462) 44%, rgba(0,0,0,1) 81%);*/
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0, 0, 0, 1) 81%);
+    /* background: linear-gradient(to right , #000000 0%, rgb(62, 11, 91));*/
 }
-#page-7 > section:hover{
-   /* box-shadow: 0 0 10px whitesmoke;*/
+
+#page-7 > section:hover {
+    /* box-shadow: 0 0 10px whitesmoke;*/
 }
+
 #page-7 .upSection {
     width: 80%;
     display: flex;
@@ -138,7 +139,7 @@ justify-content: center;
 
 
 #page-7 .downSection {
-    height:100%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -233,7 +234,7 @@ justify-content: center;
 
 /*first-Child===================>*/
 #page-7 .up > :first-child > div {
-    background:black;
+    background: black;
     height: 100%;
     width: 100%;
 
@@ -264,7 +265,7 @@ justify-content: center;
 
 #page-7 .up > section > div {
     height: 100%;
-    background:black;
+    background: black;
 }
 
 #page-7 .up > section > div:nth-child(1) {
@@ -272,7 +273,7 @@ justify-content: center;
     margin-top: 20px;
     margin-bottom: 0;
     border-radius: 20px;
-    background:linear-gradient(to right, black,rgb(3, 66, 140) 100%);
+    background: linear-gradient(to right, black, rgb(3, 66, 140) 100%);
     transform: perspective(100px) rotateY(4deg);
     align-self: flex-start;
 
@@ -324,7 +325,7 @@ justify-content: center;
     width: 60%;
     height: 50%;
     border-radius: 20px;
-    background:linear-gradient(to right, rgb(1, 52, 112) 0%,black);
+    background: linear-gradient(to right, rgb(1, 52, 112) 0%, black);
     transform: perspective(100px) rotateY(-4deg);
 
     letter-spacing: 2px;
@@ -363,12 +364,13 @@ justify-content: center;
 
 }
 
-#page-7 .up>section>:first-child:hover{
-   transform: perspective(100px) rotateY(-4deg);
+#page-7 .up > section > :first-child:hover {
+    transform: perspective(100px) rotateY(-4deg);
     transition: all 2s;
 }
-#page-7 .down>section>:last-child:hover{
-   transform: perspective(100px) rotateY(4deg);
+
+#page-7 .down > section > :last-child:hover {
+    transform: perspective(100px) rotateY(4deg);
     transition: all 2s;
 
 }

@@ -1,6 +1,6 @@
 
 #page-8 {
-justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -10,12 +10,14 @@ justify-content: center;
     flex-direction: column;
     height: 80%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0,0,0,1) 81%);
-    z-index: 1;
+    background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0, 0, 0, 1) 81%);
+
 }
+
 #page-8 > section:hover {
-/*    box-shadow: 0 -2px 5px whitesmoke;*/
+    /*    box-shadow: 0 -2px 5px whitesmoke;*/
 }
+
 #page-8 .gallerySection {
     display: flex;
     flex-direction: row;
@@ -29,7 +31,7 @@ justify-content: center;
     background-color: rgba(255, 255, 255, 0.84);
     display: flex;
     flex-direction: row;
-    width: 60%;
+    width: 70%;
     height: 100%;
 }
 
@@ -53,7 +55,8 @@ justify-content: center;
     padding: 1%;
     cursor: pointer;
 }
-#page-8 .gallerySection > section > section > figure:hover{
+
+#page-8 .gallerySection > section > section > figure:hover {
     transform: scale(1.1);
     align-self: center !important;
     transition: all 1s;
@@ -77,7 +80,7 @@ justify-content: center;
 /*PAGE 9 Style*/
 
 #page-9 {
-height: 150vh;
+    height: 150vh;
 
 }
 
@@ -86,11 +89,12 @@ height: 150vh;
 }
 
 
-
 #page-9 > section {
     width: 100%;
     height: 90%;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #page-9 .upSection {
@@ -101,23 +105,25 @@ height: 150vh;
 
 #page-9 .downSection {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 60%;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-#page-9 .downSection::before{
+
+#page-9 .downSection::before {
     content: " ";
     width: 50%;
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
     margin: auto;
     box-shadow: 0 0 5px whitesmoke;
     background-color: whitesmoke;
- margin-top: 10px;
-    height:2px;
+    margin-top: 10px;
+    height: 2px;
 }
 
 
@@ -135,100 +141,149 @@ height: 150vh;
 }
 
 
-
 #page-9 .downSection > section {
-    width: 30%;
+    display: flex;
+    width: 40%;
     height: 100%;
     justify-content: center;
     align-items: center;
 
 }
-#page-9 .downSection > section:nth-child(2){
-    flex-grow: 1;
-    display: flex;
-    width: 40%;
-    align-items: center;
-}
-.contactForm{
+
+.contactForm {
     justify-content: center;
-    height:100%;
+    height: 100%;
     width: 100%;
     flex-direction: column;
 
 
 }
-.contactForm>input,textarea{
+
+.contactForm > input, textarea {
     border-radius: 5px;
-    margin:10px;
+    margin: 10px;
     /*border: blue solid 2px;*/
     color: black;
 }
-.contactForm>:first-child{
+
+.contactForm > :first-child {
     height: 100px;
 }
 
-.contactForm>button{
-width: 100px;
+.contactForm > button {
+    width: 100px;
     align-items: center;
     align-self: center;
-    background: linear-gradient(to right,black, #690303);
+    background: linear-gradient(to right, black, #690303);
     border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
     color: #fff;
     cursor: pointer;
-    font-family: "JetBrains Mono",monospace;
-    height: 48px;
+    font-family: "JetBrains Mono", monospace;
+    height: 35px;
     justify-content: center;
-    transition: box-shadow .15s,transform .15s;
+    transition: box-shadow .15s, transform .15s;
 }
-.contactForm>button:hover{
-    background: linear-gradient(to left,black, #690202);
+
+.contactForm > button:hover {
+    background: linear-gradient(to left, black, #690202);
     transition: all 2s;
 
 }
 
-#page-9 .downSection > :first-child img {
-    width: 90%;
-    height: 70%;
-    border-radius: 20px;
-    box-shadow: 0 0 5px #ffffff;
-}
 
 #page-9 .downSection > :last-child {
-    height: 100%;
-    justify-content: center;
+    height: 90%;
 }
 
 #page-9 .downSection > :last-child iframe {
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 50%;
     box-shadow: 0 0 10px #005fd0;
-    border-radius: 20px;
+    border-radius: 20px
 }
 
 
-
- /*FOOTER AREA ========================>*/
-body>footer{
+/*FOOTER AREA ========================>*/
+body > footer {
+    border-top: 2px solid whitesmoke;
     height: 20vh;
-    background-color: rgba(44, 41, 41, 0.74);
+    background-color: rgba(0, 0, 0, 0.67);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-left:5%;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1em;
+}
+body > footer>section{
+    height: 80%;
+}
+footer h2,footer p{
+    margin: 0;
+}
+footer>section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
 
 }
-body>footer> div{
-    width: 50%;
-}
-body>footer div h2,p{
-margin: 0;
-}
-body>footer div:nth-child(2){
+footer>section:nth-child(2)>div{
+    margin: 5px;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
-    padding-bottom: 1%;
-    height: 100%;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    align-content: center;
+
 }
+footer>section:nth-child(2)>div:nth-child(1):hover{
+    background-color: #0f46d7;
+}
+footer>section:nth-child(2)>div:nth-child(2):hover{
+    background-color: deepskyblue;
+}
+footer>section:nth-child(2)>div:nth-child(3):hover{
+    background-color: #036dd7;
+}
+footer>section:nth-child(2)>div:nth-child(4):hover{
+    background-color: #1dab1d;
+}
+footer>section:nth-child(2)>div{
+    transition: background-color 2s;
+}
+footer>section:nth-child(2) img{
+   width: 1.5em;
+}
+footer>section:nth-child(3){
+    height:80%;
+    align-self: end;
+
+}
+footer>section:nth-child(3) p{
+    opacity: 0.7;
+    margin: 5px;
+}
+footer>section:nth-child(3) span{
+    background-image: url("../img/footer call.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+footer>section:nth-child(3) a{
+    display: inline-flex;
+    margin-top: 5px;
+}
+footer>section:nth-child(3) a:hover{
+    color: red;
+}
+footer>section:nth-child(4){
+  height: 30%;
+align-self: end;
+}
+
