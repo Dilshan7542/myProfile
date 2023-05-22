@@ -11,7 +11,9 @@ $("#btnAboutMe").click(function (){
     });
 });*/
 $(window).on("load",function (){
+    setTimeout(function (){
    $("#loading").fadeOut(1000);
+    },50000);
 
 });
 
@@ -64,6 +66,7 @@ function hideAllServices(){
 $(window).resize(function (){
         if(window.innerWidth>450){
             $(`#page-4 .downSection #serviceSection section > div`).show();
-
+        }else{
+            $("#page-7 .downSection>section>section").scrollLeft( 50 );
         }
 });

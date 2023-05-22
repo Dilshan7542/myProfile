@@ -130,31 +130,19 @@
     width: 40px;
     height: 20px;
     margin-top: 20px;
+    border-radius: 12px;
     background-image: url("../img/arrow.png");
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+    opacity: 1;
     transition: all 2s;
     display: none;
 }
 
 #page-4 .downSection > section > aside > div:hover {
-    box-shadow: 0 0 25px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 25px #a902ef,
-    0 0 25px #f403e0;
-    background-position-x: 100%;
 
     transition: all 1s;
-}
-
-#page-4 .downSection > section > aside > div:first-child:hover {
-    width:5%;
-}
-
-#page-4 .downSection > section > aside > div:last-child:hover {
-    width: 5%;
 }
 
 #page-4 .downSection > section > aside > div:first-child {
@@ -255,7 +243,7 @@
     align-items: center;
     box-shadow: 0 0 5px blue;
     font-family: 'Roboto Mono', monospace;
-    transform: perspective(100px) rotateY(-2deg);
+    transform: perspective(100px) rotateY(-5deg);
     transition: all 2s;
 
 }
@@ -277,8 +265,7 @@
     0 0 10px #03e9f4,
     0 0 10px #a902ef,
     0 0 10px #f403e0;
-
-    transform: perspective(100px) rotateY(4deg);
+    transform: perspective(100px) rotateY(0deg);
     transition: all 2s;
 }
 

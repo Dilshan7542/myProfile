@@ -225,6 +225,7 @@
         height: auto;
     }
     #page-3>section{
+        background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 30%, rgba(86, 4, 11, 0.93) 44%, rgba(0,0,0,1) 55%);
         width: 97%;
         margin-top: 12vh;
         box-shadow: 0 0 4px whitesmoke;
@@ -252,7 +253,7 @@
         color: rgb(2, 8, 255);
     }
 
-    /*PAGE 4 STYLE======================*/
+        /*PAGE 4 STYLE======================*/
     #page-4>section{
         box-shadow: -1px -1px 4px whitesmoke;
         margin-top: 16vh;
@@ -327,26 +328,41 @@
     #page-5 .skillSection > section {
         margin-left: 25px;
     }
+    #page-5 .skillSection > section > div{
+        margin: 20px;
+        transform: perspective(100px) rotateY(5deg);
+    }
     #page-5 .skillSection > section > div, #page-6 .downSection > section > section > section > div {
         width: 55vw !important;
         margin-left: 0 !important;
 
+    }
+    #page-5 .skillSection > section > div:hover {
+        transform: perspective(100px) rotateY(0deg);
     }
     #page-6{
         height: 100vh;
     }
 
     /*PAGE 7 STYLE (Education)======================*/
+    #page-7 > section {
+        margin-top: 8vh;
+        height: 90%;
+    }
     #page-7 .downSection {
         margin-bottom: 0 !important;
     }
     #page-7 .downSection > section {
-        height: 80% !important;
+        height: 95% !important;
         width: 80% !important;
     }
 
     #page-7 .scrollSection{
         width: 300%!important;
+        height: 90%;
+    }
+    #page-7 .scrollSection>section{
+        width: 150% !important;
     }
 
     /*PAGE 8 STYLE(Gallery)======================*/
