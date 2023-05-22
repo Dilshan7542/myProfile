@@ -411,6 +411,7 @@
    body>footer{
         justify-content: center;
        height: auto;
+       flex-direction: column;
        text-align: center;
     }
     body>footer>section{
