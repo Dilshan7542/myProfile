@@ -321,6 +321,7 @@
     #page-5>section{
         box-shadow: 2px -1px 4px whitesmoke;
         width: 97%;
+        height: 80%;
     }
     #page-5 .upSection > section {
         width: 80%;
@@ -330,7 +331,14 @@
     }
     #page-5 .skillSection > section > div{
         margin: 20px;
+        border-left: 5px solid blue;
+        border-right: 1px solid blue;
         transform: perspective(100px) rotateY(5deg);
+    }
+    #page-5 .skillSection > section > div:hover{
+        box-shadow: 0 0 10px red,0 0 10px red,0 0 10px red;
+        border: 0 solid blue;
+        transition: all 2s;
     }
     #page-5 .skillSection > section > div, #page-6 .downSection > section > section > section > div {
         width: 55vw !important;
@@ -386,9 +394,12 @@
         height: 100%;
         align-items: center;
         flex-wrap: nowrap;
+        margin-top: 2vh;
     }
     #page-9 section .downSection::before{
-        display: none;
+       margin: auto;
+        background-color: blue;
+        width: 80%;
     }
     #page-9 section .downSection>section{
         height: 40%;
@@ -401,6 +412,7 @@
     }
     #page-9 p{
         color: var(--pRed);
+        text-align: center;
         font-size: 16px!important;
     }
 
@@ -431,6 +443,30 @@
 
 }
 
+@media all and  (max-height:578px) {
+    #page-1{
+        height: 110vh !important;
+
+    }
+    #page-1 > section > .rightSection > section:nth-child(2) > div{
+        width: 85%;
+    }
+
+}
+@media all and  (max-height:622px) and (max-width: 450px) {
+    main>main{
+        height: 110vh !important;
+    }
+    #page-3{
+        height: auto !important;
+
+    }
+    #page-9{
+        height: 200vh !important;
+
+    }
+
+}
 
 
 

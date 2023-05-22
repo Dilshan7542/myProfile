@@ -167,6 +167,7 @@
 #page-5 > section {
     flex-direction: column;
     width: 100%;
+    height: 90%;
     background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0, 0, 0, 1) 81%);
 }
 
@@ -174,6 +175,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 90%;
 
 }
 
@@ -184,7 +186,7 @@
 #page-5 .upSection > section {
     align-self: center;
     width: 90%;
-    height: 65vh;
+    height: 100%;
     display: flex;
     background-color: rgba(255, 255, 255, 0.81);
     justify-content: center;
@@ -275,12 +277,6 @@
     transition: all 2s;
 }
 
-#page-5 .downSection {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 
 
 

@@ -21,13 +21,11 @@
    /* background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgba(0, 0, 0, 0.7));*/
     background: linear-gradient(to right ,rgba(86, 4, 11, 0.93) 0%, rgb(0, 0, 0) 60%);
 
-
-    transform: perspective(200vw) rotateY(10deg);
 }
 #page-1 > section:hover {
-    box-shadow: 5px 0 10px whitesmoke;
+    box-shadow: 5px 0 5px whitesmoke;
     margin-right: 20px;
-    transform: perspective(200vw) rotateY(0deg);
+
 
 }
 /*#page-1 > section:hover span{
