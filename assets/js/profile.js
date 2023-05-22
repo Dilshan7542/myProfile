@@ -13,7 +13,7 @@ $("#btnAboutMe").click(function (){
 $(window).on("load",function (){
     setTimeout(function (){
    $("#loading").fadeOut(1000);
-    },50000);
+    },5000);
 
 });
 
