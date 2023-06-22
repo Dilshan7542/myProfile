@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+    height: 70px;
+}
+h3{
+    margin-top: 0;
+    padding-top:10px ;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 6em;
+    font-weight: bold;
+}
+main>main:nth-child(1){
+    height: 100vh;
+}
+
+main>main:nth-child(2){
+    height: 100vh;
+    background-color: deepskyblue;
+}
+main>main:nth-child(3){
+    height: 100vh;
+    background-color: #603e3e;
+}
+main>main:nth-child(4){
+    height: 100vh;
+    background-color: #e00202;
+}
+main>main:nth-child(1)> header{
+  background-color: crimson;
+}
+main>main:nth-child(2)>header{
+    background-color: #0543cc;
+}
+main>main:nth-child(3)>header{
+    background-color: #232836;
+}
+main>main:nth-child(4)>header{
+    background-color: #620606;
+}

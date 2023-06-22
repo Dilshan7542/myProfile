@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-Case-Positions-Absolute-and-Relative/01-Case-Positions-Absolute-and-Relative.iml" filepath="$PROJECT_DIR$/01-Case-Positions-Absolute-and-Relative/01-Case-Positions-Absolute-and-Relative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Case-Absolute,Relative and-Box-Model/02-Case-Absolute,Relative and-Box-Model.iml" filepath="$PROJECT_DIR$/02-Case-Absolute,Relative and-Box-Model/02-Case-Absolute,Relative and-Box-Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-Case-Fixed-positions/03-Case-Fixed-positions.iml" filepath="$PROJECT_DIR$/03-Case-Fixed-positions/03-Case-Fixed-positions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-Case-Sticky-positions/04-Case-Sticky-positions.iml" filepath="$PROJECT_DIR$/04-Case-Sticky-positions/04-Case-Sticky-positions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-Case-Grid-Layout/05-Case-Grid-Layout.iml" filepath="$PROJECT_DIR$/05-Case-Grid-Layout/05-Case-Grid-Layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-Case-Grid-Layout-Row-Column/06-Case-Grid-Layout-Row-Column.iml" filepath="$PROJECT_DIR$/06-Case-Grid-Layout-Row-Column/06-Case-Grid-Layout-Row-Column.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment-01.iml" filepath="$PROJECT_DIR$/assignment-01.iml" />
+    </modules>
+  </component>
+</project>

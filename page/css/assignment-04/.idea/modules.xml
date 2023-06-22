@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignment-04.iml" filepath="$PROJECT_DIR$/assignment-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-01-Transition/case-01-Transition.iml" filepath="$PROJECT_DIR$/case-01-Transition/case-01-Transition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-02-Transition/case-02-Transition.iml" filepath="$PROJECT_DIR$/case-02-Transition/case-02-Transition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-03-Animation-Rotation/case-03-Animation-Rotation.iml" filepath="$PROJECT_DIR$/case-03-Animation-Rotation/case-03-Animation-Rotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-04-Animation-Water-Drop/case-04-Animation-Water-Drop.iml" filepath="$PROJECT_DIR$/case-04-Animation-Water-Drop/case-04-Animation-Water-Drop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-05-Animation-Slider/case-05-Animation-Slider.iml" filepath="$PROJECT_DIR$/case-05-Animation-Slider/case-05-Animation-Slider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/case-06-Animation-Car/case-06-Animation-Car.iml" filepath="$PROJECT_DIR$/case-06-Animation-Car/case-06-Animation-Car.iml" />
+    </modules>
+  </component>
+</project>

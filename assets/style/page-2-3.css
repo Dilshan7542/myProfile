@@ -1,18 +1,19 @@
 
 #page-2 {
     height: 100vh;
-
+    display: flex;
+    justify-content: center;
 }
 
 
 #page-2 > section {
+    height: 90%;
     flex-direction: column;
-    background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 10%, rgba(86, 4, 11, 0.93) 100%);
+    border: black solid 2px;
+    box-shadow: 0 -2px 4px #020202;
 
 }
-#page-2 > section:hover {
-    box-shadow: 0 -2px 5px #ffffff,0 -2px 5px #ffffff;
-}
+
 
 #page-2 .upSection {
     height: 10%;
@@ -46,7 +47,6 @@
 #page-2 .downSection > section:first-child h4, h3 {
     margin: 0;
     font-family: 'Goldman', cursive;
-    color: rgba(255, 255, 255, 0.85);
     font-size: 1.7em;
 
 }
@@ -61,7 +61,7 @@
 }
 
 #page-2 .downSection > section:last-child > article {
-    margin-left: 4%;
+    margin-left: 2%;
     align-self: center;
     width: 70%;
     flex-wrap: wrap;
@@ -84,34 +84,59 @@
 }
 
 #page-2 .downSection > section:last-child > article > p {
-    color: rgba(255, 255, 255, 0.82);
-    margin: 1%;
-    margin-bottom: 3%;
+    position: relative;
+    margin: 5px;
+    padding-left:20px;
+    margin-bottom: 20px;
     text-shadow: white;
+}
+#page-2 .downSection > section:last-child > article > p::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #01EFFF;
+    border-radius: 100%;
+    z-index: 5;
+
+}
+#page-2 .downSection > section:last-child > article > p::after{
+    position: absolute;
+    content: "";
+    left: 4px;
+    width: 1px;
+    height: calc(100% + 25px);
+    top: 10px;
+    margin: auto;
+    background-color: #01EFFF;
+    z-index: 5;
+}
+#page-2 .downSection > section:last-child > article > p:last-child::after{
+    display: none;
 }
 
 /*====================================================================================== PAGE-3*/
 
 #page-3 {
-    height: 165vh;
+    height: 120vh;
     align-items: self-end;
     padding-bottom: 4%;
 }
 
 
 #page-3 > section {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
     height: 92%;
-    background: linear-gradient(180deg, rgba(3,3,3,0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0,0,0,1) 81%);
-
-
+    border: black solid 2px;
+    box-shadow: 0 0 4px #050505;
 }
-#page-3 > section:hover {
-    box-shadow: 0 0 10px whitesmoke;
-}
+
 
 
 
@@ -147,19 +172,44 @@
 
 #page-3 > section > section > div > h2 {
     text-align: center;
-    color: rgba(255, 255, 255, 0.82);
-    text-shadow:0 0 20px #d6fcfc !important;
+    text-shadow:0 0 5px #ff0000 !important;
 }
 
+#page-3 > section > article p::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color:#01EFFF;
+    border-radius: 100%;
+    z-index: 5;
+}
+#page-3 > section > article p::after{
+    position: absolute;
+    content: "";
+    left: 4px;
+    width: 1px;
+    height: calc(100% + 10px);
+    top: 10px;
+    margin: auto;
+    background-color:  #01EFFF;
+    z-index: 5;
+}
+#page-3 > section > article p:last-child::after{
+    content: "";
+   display: none;
+}
 
 #page-3 > section > article p {
+    position: relative;
     margin: 5px;
-    /*text-shadow: 0 0 5px whitesmoke;*/
+    padding-left: 20px;
     font-weight: bold;
     font-family: 'Goldman', cursive;
-    letter-spacing: 4px;
     font-size: 1.1em;
-    color: rgba(255, 255, 255, 0.77);
 
 
 }

@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+    font-width: bold;
+}
+
+header>nav{
+    position: relative;
+    height: 70px;
+
+}
+nav img{
+    width: auto;
+    height: 70px;
+}
+
+header>nav ul{
+    position: absolute;
+    right: 15px;
+    top: 0;
+
+}
+
+header>nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+
+}
+main{
+    position: relative;
+    width: 100%;
+
+}
+main>aside{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    bottom: 0;
+    background-color: #5b25b4;
+
+}
+main>section{
+    position: relative;
+    width: 80%;
+    left: 20%;
+}
+main>section>div{
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 2px 2px black;
+}
+
+main>section>section>div{
+    display: inline-block;
+    width: 32%;
+    border: green solid 2px;
+}
+main>section>section{
+
+    padding-left: 10px;
+    padding-top: 10px;
+}
+main>section>article{
+    padding-left:10px;
+    overflow-x: hidden;
+    width: 95%;
+}
+
+main>section>article>p{
+    width: 100%;
+}
+aside>section{
+    width: 100%;
+}
+
+aside ul li{
+   list-style: none;
+    padding-top: 15px;
+}
+aside ul{
+   padding-left: 10px;
+    width: 100%;
+
+}
+
+
+
+footer{
+    position: relative;
+    background-color: #949090;
+    height:50px;
+}
+
+footer h3{
+ margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+nav a{
+    color: black;
+}
+aside a {
+    color: white;
+    font-size: 2em;
+
+}

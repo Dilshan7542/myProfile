@@ -2,6 +2,7 @@
 #page-8 {
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 
@@ -10,7 +11,7 @@
     flex-direction: column;
     height: 80%;
     width: 100%;
-    background: linear-gradient(180deg, rgba(3, 3, 3, 0.9108018207282913) 19%, rgba(86, 4, 11, 0.93) 44%, rgba(0, 0, 0, 1) 81%);
+
 
 }
 
@@ -72,7 +73,6 @@
 
 #page-8 h4 {
     cursor: pointer;
-    color: #ffffff;
     text-align: center;
 }
 
@@ -120,8 +120,8 @@
     right: 0;
     top: 0;
     margin: auto;
-    box-shadow: 0 0 5px whitesmoke;
-    background-color: whitesmoke;
+    box-shadow: 0 0 5px #0e0c0c;
+    background-color: #0e0c0c;
     margin-top: 10px;
     height: 2px;
 }
@@ -208,7 +208,7 @@
 body > footer {
     border-top: 2px solid whitesmoke;
     height: 20vh;
-    background-color: rgba(0, 0, 0, 0.67);
+    background-color: rgba(0, 0, 0, 0.88);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -219,6 +219,7 @@ body > footer>section{
     height: 80%;
 }
 footer h2,footer p{
+    color: white;
     margin: 0;
 }
 footer>section:nth-child(2){
@@ -266,6 +267,7 @@ footer>section:nth-child(3){
 footer>section:nth-child(3) p{
     opacity: 0.7;
     margin: 5px;
+    color: white;
 }
 footer>section:nth-child(3) span{
     background-image: url("../img/footer call.png");
@@ -278,6 +280,7 @@ footer>section:nth-child(3) span{
 footer>section:nth-child(3) a{
     display: inline-flex;
     margin-top: 5px;
+    color: white;
 }
 footer>section:nth-child(3) a:hover{
     color: red;

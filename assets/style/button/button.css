@@ -18,6 +18,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     transition: all 1s;
+    color: white;
 }
 
 .button-86:hover{
@@ -42,6 +43,7 @@
     background: #000000;
     border-radius: 15px;
     box-shadow: 2px 0 5px whitesmoke;
+
 
 }
 

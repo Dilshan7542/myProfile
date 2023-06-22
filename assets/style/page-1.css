@@ -17,97 +17,20 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     overflow: hidden;
+    border: black solid 2px;
+    box-shadow: 4px 0 5px #000000;
 
-   /* background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgba(0, 0, 0, 0.7));*/
-    background: linear-gradient(to right ,rgba(86, 4, 11, 0.93) 0%, rgb(0, 0, 0) 60%);
 
 }
 #page-1 > section:hover {
-    box-shadow: 5px 0 5px whitesmoke;
+
     margin-right: 20px;
 
 
 }
-/*#page-1 > section:hover span{
-   opacity: 0.0;
-    transition: all 2s;
-}*/
-/*#page-1 > section>span{
-    position: absolute;
-    transition: all 1s;
-}
-#page-1 > section>span:nth-of-type(1){
-    top: 0;
-   left: 0;
-    height: 4px;
-    width: 100%;
-    background:linear-gradient(to right,transparent, rgb(227, 2, 207));
-    animation: spanXR 4s linear infinite;
-}
-#page-1 > section>span:nth-of-type(2){
-    top: 0;
-   right: 0;
-    height: 100%;
-    width: 4px;
-    background:linear-gradient(to bottom,transparent, rgb(255, 0, 0));
-    animation: spanYB 4s linear infinite 2s;
-}
-#page-1 > section>span:nth-of-type(3){
-   bottom: 0;
-    right: 0;
-    height: 4px;
-    width: 100%;
-    background:linear-gradient(to left,transparent, rgb(252, 252, 252));
-    animation: spanXL 4s linear infinite;
-}
-#page-1 > section>span:nth-of-type(4){
-    bottom: 0;
-   left: 0;
-    height: 100%;
-    width: 4px;
-    background:linear-gradient(to top,transparent, #0002fa);
-    animation: spanYT 4s linear infinite 2s;
-}
-@keyframes spanXR {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-
-    }
-}
-@keyframes spanYB {
-    0%{
-        transform: translateY(-100%);
-    }
-    100%{
-        transform: translateY(100%);
-
-    }
-}
-@keyframes spanXL {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-
-    }
-}
-@keyframes spanYT {
-    0%{
-        transform: translateY(100%);
-    }
-    100%{
-        transform: translateY(-100%);
-
-    }
-}*/
 
 /*left-section*/
 #page-1 > section > .leftSection {
-    position: relative;
     height: 100%;
     width: 50%;
     display: flex;
@@ -120,7 +43,7 @@
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+
 }
 
 
@@ -155,7 +78,6 @@
     font-weight: bold;
     letter-spacing: 2px;
     padding-left: 0;
-    color: rgba(245, 245, 245, 0.67);
     transition: all 2s;
 
 }
@@ -167,7 +89,6 @@
 }
 #page-1 > section > section > article > div:hover h1{
     background-size: 100%;
-    color: rgba(245, 245, 245, 0.82);
     transition: all 2s;
 }
 @keyframes animateFadeOutIn {
@@ -196,11 +117,11 @@
     letter-spacing: 10px;
     font-family: 'Bebas Neue', cursive;
     overflow: hidden;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(229, 42, 42));
     background-repeat: no-repeat;
     background-size: 80%;
     -webkit-background-clip: text;
-  color: rgba(255, 255, 255, 0);
+  color: rgba(5, 4, 4, 0.68);
     animation-delay: 5s;
     animation: animateFadeOutInPR 5s linear infinite;
     transition: all 2s;
@@ -226,7 +147,6 @@
 }
 .workArea:hover p{
     background-size: 100%;
-   color: rgba(255, 255, 255, 0.85);
     transition: all 2s;
 }
 @keyframes animateFadeOutInPR {
@@ -319,12 +239,6 @@
 #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div:hover {
     border-color: #ffffff;
     transform: rotate(360deg);
-  /*  box-shadow: 0 0 5px #151a1a,
-    0 0 25px #070909,
-    0 0 50px #0d1111,
-    0 0 50px #130f15,
-    0 0 50px #171010,
-    0 0 200px #141c1c;*/
     box-shadow: 0 0 5px #03e9f4,
     0 0 25px #03e9f4,
     0 0 50px #03e9f4,
@@ -343,27 +257,27 @@
 
 /*right-section Style =========>*/
 
-#page-1 > section > .rightSection > section:nth-child(1) {
-    align-self: center;
-    padding-top: 10%;
-    height: 10%;
-}
 
-#page-1 > section > .rightSection > section:nth-child(1) > div img {
-    width: 100%;
-}
 
-#page-1 > section > .rightSection > section:nth-child(2) {
-    height: 90%;
-    width: 50%;
-    align-self: self-start;
-
-}
-
-#page-1 > section > .rightSection > section:nth-child(2) > div {
-    background-image: url("../img/me.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 80%;
+#page-1 > section > .rightSection > section {
     height: 100%;
+    width: 100%;
+display:  flex;
+    align-items: end;
+    justify-content: start;
+
+
+}
+
+#page-1 > section > .rightSection > section > div {
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+#page-1 > section > .rightSection > section > div img{
+    width:60%;
+
+
 }
