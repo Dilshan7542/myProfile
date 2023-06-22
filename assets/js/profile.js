@@ -67,6 +67,6 @@ $(window).resize(function (){
         if(window.innerWidth>450){
             $(`#page-4 .downSection #serviceSection section > div`).show();
         }else{
-            $("#page-7 .downSection>section>section").scrollLeft( 50 );
+            $("#page-7 .downSection>section>section").scrollLeft( 80 );
         }
 });

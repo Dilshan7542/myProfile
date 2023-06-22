@@ -360,7 +360,6 @@
     margin-bottom: 0;
     border-radius: 20px;
     background: linear-gradient(to right, black , #243d3f);
-    transform: perspective(100px) rotateY(1deg);
     align-self: flex-start;
 
     letter-spacing: 2px;
@@ -412,8 +411,6 @@
     height: 50%;
     border-radius: 20px;
     background: linear-gradient(to right,  #243d3f, black);
-    transform: perspective(100px) rotateY(-1deg);
-
     letter-spacing: 2px;
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
@@ -451,12 +448,10 @@
 }
 
 #page-7 .up > section > :first-child:hover {
-    transform: perspective(100px) rotateY(-1deg);
     transition: all 2s;
 }
 
 #page-7 .down > section > :last-child:hover {
-    transform: perspective(100px) rotateY(0deg);
     transition: all 2s;
 
 }
