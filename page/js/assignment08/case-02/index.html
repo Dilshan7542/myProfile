@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/style/style.css">
+    <title>Queue Color</title>
+</head>
+<body>
+<main>
+    <section id="mainSection">
+        <section>
+            <div></div>
+        </section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section>
+            <div></div>
+        </section>
+    </section>
+</main>
+<script src="asset/jQuery/jquery-3.6.3.min.js"></script>
+<script>
+    var colorAr = ["red", "green", "blue", "yellow", "hotPink", "indigo"];
+
+  /*  var element = document.querySelector("main>section>section:nth-child(3)>div:nth-child(1)");
+    var computedStyle = window.getComputedStyle(element);
+    console.log(computedStyle.backgroundColor);*/
+
+    function ride() {
+        var temp = [];
+        var temp1 = colorAr[colorAr.length - 1];
+        temp[0] = colorAr[1];
+        colorAr[1] = colorAr[0];
+        temp[1] = colorAr[2]
+        colorAr[2] = temp[0];
+        temp[0] = colorAr[3];
+        colorAr[3] = temp[1];
+        temp[1] = colorAr[4];
+        colorAr[4] = temp[0];
+        temp[0] = colorAr[5];
+        colorAr[5] = temp[1];
+        colorAr[0] = temp1;
+        let count=1;
+        for (let i = 0; i < colorAr.length; i++) {
+            if(i===0){
+            document.querySelector("main>section>section:nth-child(1)>div:nth-child(1)").style.backgroundColor=colorAr[i];
+            }
+            if(i!==0 && i<5){
+            document.querySelector(`main>section>section:nth-child(2)>div:nth-child(${count++})`).style.backgroundColor=colorAr[i];
+            }
+            if(i===colorAr.length-1){
+            document.querySelector("main>section>section:nth-child(3)>div:nth-child(1)").style.backgroundColor=colorAr[i];
+            }
+        }
+
+    }
+setInterval(ride,1000);
+
+</script>
+</body>
+</html>

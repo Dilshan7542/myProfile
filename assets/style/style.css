@@ -1,6 +1,6 @@
 
 :root{
-    --pRed: rgba(250, 3, 3, 0.56);
+   font-size: 16px;
 }
 
 
@@ -97,8 +97,7 @@ header > nav > div:nth-child(1) {
 header > nav > div:nth-child(2) {
     right: 0;
     border-radius: 12px;
-    box-shadow: 0 2px 3px black;
-    border-bottom: solid black;
+
 
 }
 

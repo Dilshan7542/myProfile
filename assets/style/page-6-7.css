@@ -139,10 +139,10 @@
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
-    width:30px;
-    height: 30px;
     cursor: pointer;
     border-radius:30px;
+    width:30px;
+    height: 30px;
     bottom: 0;
     top: 0;
     margin: auto;

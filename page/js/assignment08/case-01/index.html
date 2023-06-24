@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="asset/style/style.css">
+    <title>Queue</title>
+</head>
+<body>
+<main>
+<section>
+    <section id="manSection">
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>A</span></div>
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>B</span></div>
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>C</span></div>
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>D</span></div>
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>E</span></div>
+        <div><img src="./asset/img/animated-men-unscreen.gif" alt=""> <span>F</span></div>
+    </section>
+    <section>
+        <div><img src="./asset/img/undraw_Ordinary_day_re_v5hy.png" alt=""></div>
+    </section>
+</section>
+</main>
+<script>
+    var textAr=[];
+    function ride(){
+        for (let i = 0; i < 6; i++) {
+            textAr[i] = document.querySelector(`#manSection>:nth-child(${i+1})>span`).textContent;
+        }
+        for (let i = 0; i < 6; i++) {
+            if((i+1)===1){
+                document.querySelector(`#manSection>:nth-child(${i+1})>span`).textContent=textAr[textAr.length-1];
+            }else{
+                document.querySelector(`#manSection>:nth-child(${i+1})>span`).textContent=textAr[i-1];
+            }
+        }
+    }
+    setInterval(ride,1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Works</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body > main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #mainSection {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainSection > section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainSection > :nth-child(2) {
+        height: 90%;
+    }
+
+    #mainSection > h1 {
+        text-align: center;
+        margin: 0;
+        margin-top: 5px;
+        height: 10%;
+    }
+
+    /*UpSection*/
+
+    #scrollSection {
+        width: 90%;
+        justify-content: center;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #scrollSection > aside {
+        width: 20vw;
+        position: relative;
+        height: 15vw;
+        min-width: 15vw;
+        margin: 20px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: black solid 1px;
+        box-shadow: 0 0 5px black;
+    }
+
+    #scrollSection > aside > article {
+        position: absolute;
+        opacity: 1;
+        z-index: 5;
+        top: 5%;
+        color: white;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        text-shadow: 0 0 5px black, 0 0 5px black;
+    }
+
+    #scrollSection > aside > article > h4 {
+        width: 100%;
+        margin: 5px;
+    }
+
+    #scrollSection > aside > article > h5 {
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        position: relative;
+    }
+    #scrollSection > aside > article > h5:nth-of-type(2){
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+    }
+    #scrollSection > aside > article > h5:nth-of-type(2)>a:hover{
+        transform: rotate(360deg);
+        transition:all 2s;
+    }
+    #scrollSection > aside > article > h5>a>span{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../assets/img/icons8-github-24.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        border-radius:30px;
+        z-index: 5;
+    }
+    #scrollSection > aside > article > div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        flex-wrap: wrap;
+    }
+
+    #scrollSection > aside > article:hover>div {
+        opacity: 1;
+        transition: all 1s;
+    }
+    #scrollSection > aside > article:hover h5:nth-of-type(2){
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    #scrollSection > aside > article > div > p {
+        flex-grow: 1;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #scrollSection > aside > article > div > p a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    #scrollSection > aside > article > div > p a:hover {
+        color: red;
+        transition: all 1s;
+    }
+
+
+    #scrollSection > aside > figure {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 12px;
+    }
+
+    #scrollSection > aside > figure::before {
+        position: absolute;
+        content: "";
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#9504c0, rgba(0, 0, 0, 0.1));
+        z-index: 1;
+    }
+
+    #scrollSection > aside > figure > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    /*DownSection*/
+    #mainSection > :last-child {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+    }
+
+    #mainSection > :last-child > div {
+        position: absolute;
+        background-image: url("../assets/img/arrow.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        width: 50px;
+        height: 20px;
+
+    }
+
+    #mainSection > :last-child > :first-child {
+        left: 0;
+        transform: rotate(180deg);
+    }
+
+    #mainSection > :last-child > :last-child {
+        right: 0;
+
+    }
+    strong{
+        color: cyan;
+    }
+    @media all and  (min-width: 350px) and (max-width: 900px) {
+
+    }
+
+
+</style>
+<body>
+<main>
+    <main id="mainSection">
+        <h1>CSS/JS Assignment</h1>
+        <section>
+            <section id="scrollSection">
+                <aside>
+                    <article>
+                        <h4>Assignment 03 (CSS)</h4>
+                        <h5>CSS Assignments Using <strong style="color: cyan">CSS-POSITION</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/IJSE-CSS-Assignments" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank"
+                                  href="./css/assignment-03/01-Case-Positions-Absolute-and-Relative/index.html">case
+                                01</a></p>
+                            <p><a target="_blank"
+                                  href="./css/assignment-03/02-Case-Absolute,Relative%20and-Box-Model/index.html">case
+                                02</a></p>
+                            <p><a target="_blank" href="./css/assignment-03/03-Case-Fixed-positions/index.html">case
+                                03</a></p>
+                            <p><a target="_blank" href="./css/assignment-03/04-Case-Sticky-positions/index.html">case
+                                04</a></p>
+                            <p><a target="_blank" href="./css/assignment-03/05-Case-Grid-Layout/index.html">case 05</a>
+                            </p>
+                            <p><a target="_blank" href="./css/assignment-03/06-Case-Grid-Layout-Row-Column/index.html">case
+                                06</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 04 (CSS)</h4>
+                        <h5>CSS Assignments Using <strong style="color: cyan">CSS-TRANSITION/ANIMATION</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/IJSE-CSS-Assignments" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="./css/assignment-04/case-01-Transition/index.html">case 01</a></p>
+                            <p><a target="_blank" href="./css/assignment-04/case-02-Transition/index.html">case 02</a></p>
+                            <p><a target="_blank" href="./css/assignment-04/case-03-Animation-Rotation/index.html">case 03</a></p>
+                            <p><a target="_blank" href="./css/assignment-04/case-04-Animation-Water-Drop/index.html">case 04</a></p>
+                            <p><a target="_blank" href="./css/assignment-04/case-05-Animation-Slider/index.html">case 05</a></p>
+                            <p><a target="_blank" href="./css/assignment-04/case-06-Animation-Car/index.html">case 06</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 05 (CSS)</h4>
+                        <h5>CSS Assignments Using <strong style="color: cyan">CSS-Media Query</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/IJSE-CSS-Assignments" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="css/assignment-05/index.html">case 01</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 06/07 (CSS)</h4>
+                        <h5>CSS and Boostrap <strong>POS-System</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/IJSE-My-POS-System" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="https://dilshan7542.github.io/IJSE-My-POS-System/">POS</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 08 (Javascript)</h4>
+                        <h5>Javascript Assignments <strong>Queue</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/JS-Queue-AS06" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="./js/assignment08/case-01/index.html">case 01</a></p>
+                            <p><a target="_blank" href="./js/assignment08/case-02/index.html">case 02</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 09 (Javascript)</h4>
+                        <h5>Javascript Assignments <strong>Knight Rider Light</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/knight-rider-light-JS" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="https://dilshan7542.github.io/knight-rider-light-JS/">Ride</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+
+                <aside>
+                    <article>
+                        <h4>Assignment 10 (Javascript)</h4>
+                        <h5>Javascript Assignments <strong>Calculator</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/calculator-js-assignment-10" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="https://dilshan7542.github.io/calculator-js-assignment-10/">Calculator</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+                <aside>
+                    <article>
+                        <h4>Assignment 11 (Javascript)</h4>
+                        <h5>Javascript Assignments <strong>Inmemory POS-System</strong></h5>
+                        <h5><a href="https://github.com/Dilshan7542/IJSE-My-POS-System" target="_blank"><span></span></a></h5>
+                        <div>
+                            <p><a target="_blank" href="https://dilshan7542.github.io/IJSE-My-POS-System/">POS-System</a></p>
+                        </div>
+                    </article>
+                    <figure>
+                        <img src="../assets/img/project/css-as-01.png" alt="">
+                    </figure>
+                </aside>
+
+            </section>
+        </section>
+        <section id="btnSection">
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+</main>
+<script>
+document.querySelector("#scrollSection>:nth-child(7)").style.display="none";
+document.querySelector("#scrollSection>:nth-child(8)").style.display="none";
+document.querySelector("#btnSection>:first-child").addEventListener("click",()=>{
+    document.querySelector("#scrollSection>:nth-child(1)").style.display="block";
+    document.querySelector("#scrollSection>:nth-child(4)").style.display="block";
+
+    document.querySelector("#scrollSection>:nth-child(7)").style.display="none";
+    document.querySelector("#scrollSection>:nth-child(8)").style.display="none";
+    document.querySelector("#btnSection>:first-child").style.opacity="0.2";
+    document.querySelector("#btnSection>:last-child").style.opacity="1";
+
+});
+document.querySelector("#btnSection>:last-child").addEventListener("click",()=>{
+    document.querySelector("#scrollSection>:nth-child(1)").style.display="none";
+    document.querySelector("#scrollSection>:nth-child(4)").style.display="none";
+
+    document.querySelector("#scrollSection>:nth-child(7)").style.display="block";
+    document.querySelector("#scrollSection>:nth-child(8)").style.display="block";
+    document.querySelector("#btnSection>:last-child").style.opacity="0.2";
+    document.querySelector("#btnSection>:first-child").style.opacity="1";
+
+});
+</script>
+</body>
+</html>

@@ -17,7 +17,7 @@
     }
 }
 
-@media all and (min-width: 100px) and (max-width: 450px) {
+@media all and (min-width: 100px) and (max-width: 900px) {
     body>aside>section> h1>span {
         font-size: 3rem;
     }
@@ -305,12 +305,12 @@
         margin: 12px !important;
         width: 90vw !important;
         height: 45% !important;
-        display: none;
+        display: none !important;
 
     }
     #page-4 .downSection #serviceSection section > div:nth-child(1),
     #page-4 .downSection #serviceSection section > div:nth-child(2){
-      display: flex;
+      display: flex !important;
     }
     #page-4 .downSection > section > aside > div {
         display: flex;
@@ -348,6 +348,9 @@
     #page-6 .downSection > section > section > section > div{
         width: 75vw !important;
     }
+    #page-6 .downSection > section > section > section > div >:nth-child(3){
+        opacity: 1;
+    }
     #page-6 .downSection > section > section > section > div>article{
         opacity: 1;
     }
@@ -355,7 +358,7 @@
         opacity: 1;
     }
     #page-6 .downSection > section > section > section > div::after{
-        background: linear-gradient(#486fba,rgba(0, 0, 0, 0.1));
+        background: linear-gradient(#9504c0,rgba(0, 0, 0, 0.1));
     }
 
         /*PAGE 7 STYLE (Education)======================*/
@@ -442,6 +445,15 @@
         order: 1;
     }
 
+    @media all and (max-height: 500px){
+        main>main{
+            height: auto;
+        }
+        main>section{
+            height: auto;
+        }
+
+    }
 
 
 
