@@ -2,205 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
     <title>My Works</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        body > main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #mainSection {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #mainSection > section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainSection > :nth-child(2) {
+            height: 90%;
+        }
+
+        #mainSection > h1 {
+            text-align: center;
+            margin: 0;
+            margin-top: 5px;
+            height: 10%;
+        }
+
+        /*UpSection*/
+
+        #scrollSection {
+            width: 90%;
+            justify-content: center;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        #scrollSection > aside {
+            width: 20vw;
+            position: relative;
+            height: 15vw;
+            min-width: 15vw;
+            margin: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border: black solid 1px;
+            box-shadow: 0 0 5px black;
+        }
+
+        #scrollSection > aside > article {
+            position: absolute;
+            opacity: 1;
+            z-index: 5;
+            top: 5%;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+            text-shadow: 0 0 5px black, 0 0 5px black;
+        }
+
+        #scrollSection > aside > article > h4 {
+            width: 100%;
+            margin: 5px;
+        }
+
+        #scrollSection > aside > article > h5 {
+            width: 100%;
+            margin: 5px;
+            text-align: center;
+            position: relative;
+        }
+        #scrollSection > aside > article > h5:nth-of-type(2){
+            display: flex;
+            opacity: 0;
+            justify-content: center;
+        }
+        #scrollSection > aside > article > h5:nth-of-type(2)>a:hover{
+            transform: rotate(360deg);
+            transition:all 2s;
+        }
+        #scrollSection > aside > article > h5>a>span{
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-image: url("../assets/img/icons8-github-24.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            border-radius:30px;
+            z-index: 5;
+        }
+        #scrollSection > aside > article > div {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            flex-wrap: wrap;
+        }
+
+        #scrollSection > aside > article:hover>div {
+            opacity: 1;
+            transition: all 1s;
+        }
+        #scrollSection > aside > article:hover h5:nth-of-type(2){
+            opacity: 1;
+            transition: all 1s;
+        }
+
+        #scrollSection > aside > article > div > p {
+            flex-grow: 1;
+            margin: 0;
+            padding: 10px;
+        }
+
+        #scrollSection > aside > article > div > p a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        #scrollSection > aside > article > div > p a:hover {
+            color: red;
+            transition: all 1s;
+        }
+
+
+        #scrollSection > aside > figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            border-radius: 12px;
+        }
+
+        #scrollSection > aside > figure::before {
+            position: absolute;
+            content: "";
+            border-radius: 12px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#9504c0, rgba(0, 0, 0, 0.1));
+            z-index: 1;
+        }
+
+        #scrollSection > aside > figure > img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+
+        /*DownSection*/
+        #mainSection > :last-child {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+        }
+
+        #mainSection > :last-child > div {
+            position: absolute;
+            background-image: url("../assets/img/arrow.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+            width: 50px;
+            height: 20px;
+
+        }
+
+        #mainSection > :last-child > :first-child {
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+        #mainSection > :last-child > :last-child {
+            right: 0;
+
+        }
+        strong{
+            color: cyan;
+        }
+        @media all and (min-width: 100px) and (max-width: 900px) {
+            body > main{
+                height: auto;
+            }
+            #mainSection > h1{
+                font-size: 2em;
+            }
+            #btnSection{
+                display: none;
+            }
+            #scrollSection{
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 100%;
+            }
+            #scrollSection > aside{
+                width: 80vw;
+                height:60vh;
+            }
+            #scrollSection > aside > article > h4,#scrollSection > aside > article > h5{
+                font-size: 1.5em;
+            }
+            #scrollSection > aside > article > h5:nth-of-type(2){
+                opacity: 1;
+            }
+            #scrollSection > aside > article > h5>a>span{
+                width: 80px;
+                height: 80px;
+            }
+            #scrollSection > aside > article > div{
+                opacity: 1;
+            }
+            #scrollSection > aside > article > div > p{
+                font-size: 1.7em;
+            }
+
+        }
+
+    </style>
 </head>
-<style>
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    body > main {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #mainSection {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #mainSection > section {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #mainSection > :nth-child(2) {
-        height: 90%;
-    }
-
-    #mainSection > h1 {
-        text-align: center;
-        margin: 0;
-        margin-top: 5px;
-        height: 10%;
-    }
-
-    /*UpSection*/
-
-    #scrollSection {
-        width: 90%;
-        justify-content: center;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    #scrollSection > aside {
-        width: 20vw;
-        position: relative;
-        height: 15vw;
-        min-width: 15vw;
-        margin: 20px;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        border: black solid 1px;
-        box-shadow: 0 0 5px black;
-    }
-
-    #scrollSection > aside > article {
-        position: absolute;
-        opacity: 1;
-        z-index: 5;
-        top: 5%;
-        color: white;
-        font-weight: bold;
-        width: 100%;
-        text-align: center;
-        text-shadow: 0 0 5px black, 0 0 5px black;
-    }
-
-    #scrollSection > aside > article > h4 {
-        width: 100%;
-        margin: 5px;
-    }
-
-    #scrollSection > aside > article > h5 {
-        width: 100%;
-        margin: 5px;
-        text-align: center;
-        position: relative;
-    }
-    #scrollSection > aside > article > h5:nth-of-type(2){
-        display: flex;
-        opacity: 0;
-        justify-content: center;
-    }
-    #scrollSection > aside > article > h5:nth-of-type(2)>a:hover{
-        transform: rotate(360deg);
-        transition:all 2s;
-    }
-    #scrollSection > aside > article > h5>a>span{
-        display: block;
-        width: 40px;
-        height: 40px;
-        background-image: url("../assets/img/icons8-github-24.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-        border-radius:30px;
-        z-index: 5;
-    }
-    #scrollSection > aside > article > div {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        flex-wrap: wrap;
-    }
-
-    #scrollSection > aside > article:hover>div {
-        opacity: 1;
-        transition: all 1s;
-    }
-    #scrollSection > aside > article:hover h5:nth-of-type(2){
-        opacity: 1;
-        transition: all 1s;
-    }
-
-    #scrollSection > aside > article > div > p {
-        flex-grow: 1;
-        margin: 0;
-        padding: 10px;
-    }
-
-    #scrollSection > aside > article > div > p a {
-        color: whitesmoke;
-        text-decoration: none;
-    }
-
-    #scrollSection > aside > article > div > p a:hover {
-        color: red;
-        transition: all 1s;
-    }
-
-
-    #scrollSection > aside > figure {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border-radius: 12px;
-    }
-
-    #scrollSection > aside > figure::before {
-        position: absolute;
-        content: "";
-        border-radius: 12px;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#9504c0, rgba(0, 0, 0, 0.1));
-        z-index: 1;
-    }
-
-    #scrollSection > aside > figure > img {
-        width: 100%;
-        height: 100%;
-        border-radius: 12px;
-    }
-
-    /*DownSection*/
-    #mainSection > :last-child {
-        width: 100%;
-        position: absolute;
-        height: 100%;
-    }
-
-    #mainSection > :last-child > div {
-        position: absolute;
-        background-image: url("../assets/img/arrow.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-        width: 50px;
-        height: 20px;
-
-    }
-
-    #mainSection > :last-child > :first-child {
-        left: 0;
-        transform: rotate(180deg);
-    }
-
-    #mainSection > :last-child > :last-child {
-        right: 0;
-
-    }
-    strong{
-        color: cyan;
-    }
-    @media all and  (min-width: 350px) and (max-width: 900px) {
-
-    }
-
-
-</style>
 <body>
 <main>
     <main id="mainSection">
@@ -363,6 +397,28 @@ document.querySelector("#btnSection>:last-child").addEventListener("click",()=>{
     document.querySelector("#btnSection>:first-child").style.opacity="1";
 
 });
+
+
+    if(window.innerWidth<450){
+        document.querySelector("#btnSection>div").style.display="none";
+        document.querySelector("#scrollSection>:nth-child(7)").style.display="block";
+        document.querySelector("#scrollSection>:nth-child(8)").style.display="block";
+    }
+  addEventListener("resize",()=>{
+      if(window.innerWidth>500){
+
+      document.querySelector("#scrollSection>:nth-child(7)").style.display="none";
+      document.querySelector("#scrollSection>:nth-child(8)").style.display="none";
+      }else{
+          document.querySelector("#scrollSection>:nth-child(7)").style.display="block";
+          document.querySelector("#scrollSection>:nth-child(8)").style.display="block";
+      }
+  });
+
+
+
+
+
 </script>
 </body>
 </html>
