@@ -36,8 +36,8 @@
 }
 
 #page-4 .upSection > h1 {
-    align-self: self-start;
-    padding-left: 10%;
+
+
 }
 
 
@@ -115,7 +115,7 @@
     font-family: 'Goldman', cursive;
     font-size: 1.5em;
     text-align: center;
-    color: rgb(255, 255, 255);
+     color:var(--headerColorGold);;
     margin: 0;
 }
 
@@ -259,11 +259,11 @@ background-color: white;
 }
 
 #page-5 .skillSection > section > div > :nth-child(2) {
-    color: white;
+    color:var(--headerColorGold);
     font-size: 1.2em;
 }
 #page-5 .skillSection > section > div h4 ,#page-5 .skillSection > section > div span{
-    color: white;
+    color:var(--headerColorGold);
 
 }
 

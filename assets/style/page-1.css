@@ -17,17 +17,13 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     overflow: hidden;
-    border: black solid 1px;
-    box-shadow: 3px 0 4px #000000;
+    border: var(--borderColor) solid 2px;
+    box-shadow: var(--borderShadow);
+    background-color: hsl(228, 50%, 10%);
 
 
 }
-#page-1 > section:hover {
 
-    margin-right: 20px;
-
-
-}
 
 /*left-section*/
 #page-1 > section > .leftSection {
@@ -76,9 +72,11 @@
 #page-1 > section > section > article > div > h1 {
     font-size: 2.7rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 10px;
     padding-left: 0;
     transition: all 2s;
+    font-family: 'Bebas Neue', cursive;
+
 
 }
 #page-1 > section > section > article > div > h1:nth-child(1){
@@ -117,11 +115,11 @@
     letter-spacing: 10px;
     font-family: 'Bebas Neue', cursive;
     overflow: hidden;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(229, 42, 42));
+    background: linear-gradient(to right, #050505, hsl(45, 54%, 58%));
     background-repeat: no-repeat;
     background-size: 80%;
     -webkit-background-clip: text;
-  color: rgba(5, 4, 4, 0.68);
+  color: rgba(255, 255, 255, 0.56);
     animation-delay: 5s;
     animation: animateFadeOutInPR 5s linear infinite;
     transition: all 2s;
@@ -265,8 +263,16 @@
 display:  flex;
     align-items: end;
     justify-content: start;
+position: relative;
 
-
+}
+#page-1 > section > .rightSection > section::after{
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 55vw;
+    border-radius: 40vw;
+    background-color: whitesmoke;
 }
 
 #page-1 > section > .rightSection > section > div {
@@ -278,6 +284,7 @@ display:  flex;
 
 #page-1 > section > .rightSection > section > div img{
     width:60%;
+    z-index: 5;
 
 
 }

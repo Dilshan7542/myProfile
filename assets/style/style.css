@@ -1,18 +1,22 @@
 
 :root{
    font-size: 16px;
+    --borderColor:hsl(0, 0%, 22%);
+    --borderShadow:-4px 8px 24px hsl(0, 0%, 0%, 0.25);
+    --headerColorGold: hsl(45, 54%, 58%);
+
 }
 
 
 *, *::after, ::before {
-    color: rgb(0, 0, 0);
+    color:white;
     box-sizing: border-box;
 
 }
 
 h1 {
     font-family: 'Orbitron', sans-serif;
-    padding-left: 10%;
+
 }
 
 a {
@@ -20,7 +24,7 @@ a {
 
 }
 body{
-    background:#F0F3FA;
+    background: hsl(228, 100%, 6%);
 
 }
 /* width */
@@ -55,25 +59,8 @@ body > header {
     width: 100%;
     height: 10vh;
     z-index: 1;
-    opacity: 0.9;
-
-
 }
-body > header::after {
-    content: " ";
-    bottom: 0;
-    height: 4px;
-    border-radius: 100%;
-    position: absolute;
-    width: 85%;
-    left: 5%;
-    transition: all 10s;
-    animation-name: mainTopShadow-hover;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    display: none;
-}
+
 
 
 
@@ -96,14 +83,19 @@ header > nav > div:nth-child(1) {
 
 header > nav > div:nth-child(2) {
     right: 0;
-    border-radius: 12px;
+ background-color: rgba(0, 0, 0, 0.69);
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:black solid 2px;
+
+
 
 
 }
 
 header > nav > :last-child > ul li {
     display: inline-block;
-    padding-top: 7px;
     padding-right: 15px;
 
 
@@ -114,7 +106,7 @@ header > nav > :last-child > ul li a {
     transition: all 2s;
     letter-spacing: 2px;
     font-size: 1.2em;
-
+color: var(--headerColorGold);
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -157,17 +149,15 @@ main>section{
     max-height: 100%;
     display: flex !important;
     border-radius: 25px;
-    transition: all 2s !important;
+    background-color: hsl(228, 50%, 10%);
 }
-main>section:hover{
-   /* box-shadow: 0 0 5px whitesmoke,0 0 5px whitesmoke,0 0 5px whitesmoke;*/
-    transition: all 2s;
-}
+
 .mainHeaders{
 letter-spacing: 10px;
-
-
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
 }
+
 @keyframes animateFadeOutInHeader {
     0% {
         background-position: -400%;

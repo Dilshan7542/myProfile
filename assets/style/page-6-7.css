@@ -95,7 +95,8 @@
     margin: 10px;
 
 }
-#page-6 .downSection > section > section > section > div>article{
+
+#page-6 .downSection > section > section > section > div > article {
     position: absolute;
     opacity: 0;
     z-index: 5;
@@ -103,26 +104,32 @@
     text-align: center;
 
 }
-#page-6 .downSection > section > section > section > div>article *{
+
+#page-6 .downSection > section > section > section > div > article * {
     font-weight: bold;
     color: white;
     font-size: 1.1em;
 }
-#page-6 .downSection > section > section > section > div:hover >article{
+
+#page-6 .downSection > section > section > section > div:hover > article {
     opacity: 1;
     transition: opacity 2s;
     text-shadow: 0 0 5px black;
 }
-#page-6 .downSection > section > section > section > div:hover >article>h4{
-    margin-bottom:5px;
+
+#page-6 .downSection > section > section > section > div:hover > article > h4 {
+    margin-bottom: 5px;
 }
-#page-6 .downSection > section > section > section > div:hover >article>p{
+
+#page-6 .downSection > section > section > section > div:hover > article > p {
     margin-top: 0;
 }
-#page-6 .downSection > section > section > section > div:hover >article>p>strong{
+
+#page-6 .downSection > section > section > section > div:hover > article > p > strong {
     color: cyan;
 }
-#page-6 .downSection > section > section > section > div::after{
+
+#page-6 .downSection > section > section > section > div::after {
     position: absolute;
     content: "";
     border-radius: 20px;
@@ -131,10 +138,11 @@
     background: transparent;
     z-index: 4;
 }
-#page-6 .downSection > section > section > section > div >:nth-child(3){
+
+#page-6 .downSection > section > section > section > div > :nth-child(3) {
     position: absolute;
     width: 70px;
-  opacity: 0;
+    opacity: 0;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.32);
     height: 50px;
@@ -145,55 +153,55 @@
     margin: auto;
     z-index: 5;
 }
-#page-6 .downSection > section > section > section > div >:nth-child(3)> a > span{
+
+#page-6 .downSection > section > section > section > div > :nth-child(3) > a > span {
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
-    border-radius:30px;
-    width:30px;
+    border-radius: 30px;
+    width: 30px;
     height: 30px;
     bottom: 0;
     top: 0;
     margin: auto;
 }
-#page-6 .downSection > section > section > section > div >:nth-child(3)>:first-child>span{
+
+#page-6 .downSection > section > section > section > div > :nth-child(3) > :first-child > span {
     background-image: url("../img/icons8-eye-64.png");
     left: 2px;
 
 }
-#page-6 .downSection > section > section > section > div >:nth-child(3)>:last-child>span{
+
+#page-6 .downSection > section > section > section > div > :nth-child(3) > :last-child > span {
     background-image: url("../img/icons8-github-24.png");
     right: 2px;
 }
 
 
-
-#page-6 .downSection > section > section > section > div:hover >div{
-   opacity: 1;
+#page-6 .downSection > section > section > section > div:hover > div {
+    opacity: 1;
 }
 
-#page-6 .downSection > section > section > section > div:hover >div span:hover{
+#page-6 .downSection > section > section > section > div:hover > div span:hover {
     transform: rotate(360deg);
     transition: all 2s;
 }
 
-#page-6 .downSection > section > section > section > div:hover img{
+#page-6 .downSection > section > section > section > div:hover img {
     transform: scale(1.05);
     transition: all 0.5s;
 }
-#page-6 .downSection > section > section > section > div:hover::after{
-    background: linear-gradient(#9504c0,rgba(0, 0, 0, 0.1));
+
+#page-6 .downSection > section > section > section > div:hover::after {
+    background: linear-gradient(#9504c0, rgba(0, 0, 0, 0.1));
     transition: all 1s;
 
 }
 
 
-
-
-
 #page-6 .downSection > section > section > section > div > figure {
-    width:95%;
+    width: 95%;
     height: 95%;
     border-radius: 20px;
     border: black solid 2px;
@@ -208,263 +216,194 @@
 /* PAGE -7 ================================>*/
 
 #page-7 {
-    justify-content: center;
-    align-items: center;
 }
 
 
 #page-7 > section {
+    background: hsl(228, 100%, 6%);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 120%;
 
 }
 
-
-
-#page-7 .upSection {
-    width: 80%;
-    display: flex;
-    height: 20%;
-}
-
-
-#page-7 .downSection {
-    height: 100%;
+#page-7 > section > section {
+    padding-top: 5%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+}
+
+#page-7 > section .upSection {
+
+    height:10%;
     justify-content: center;
-
-
 }
-
-#page-7 .downSection p {
+#page-7 > section .upSection>h1{
     text-align: center;
-    margin: 20px;
-    color: white !important;
-
+    padding-left: 0;
 }
 
-#page-7 .downSection > section {
-    width: 90%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.81);
-    border-radius: 20px;
-
-}
-
-#page-7 .downSection > section > section {
-    width: 100%;
-    height: 95%;
-    overflow-x: scroll;
-
-}
-
-#page-7 .downSection > section > section::-webkit-scrollbar-track {
-    background-color: #1a1010;
-    width: 10px;
-    border-radius: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-#page-7 .downSection > section > section::-webkit-scrollbar {
-    height: 15px;
-}
-
-#page-7 .downSection > section > section::-webkit-scrollbar-thumb {
-    background: #ffffff;
-    box-shadow: 0 0 50px #ffffff;
-    border-radius: 20px;
-    border: black solid 2px;
-}
-
-#page-7 .downSection > section > section::-webkit-scrollbar-thumb:hover {
-    background: #03e9f4;
-}
-
-#page-7 .scrollSection {
-    width: 150%;
+#page-7 > section .downSection {
     height: 100%;
     display: flex;
-    flex-direction: column;
-
+    justify-content:center;
 }
-
-#page-7 .scrollSection > section {
-    flex-grow: 1;
-}
-
-
-#page-7 .scrollSection > .up {
-    width: 100%;
+#page-7  .downSection >section{
+    height: 100%;
+    width: 80%;
+    background-color: hsl(228, 50%, 10%);
+    box-shadow: var(--borderShadow);
+    border: var(--borderColor) solid 1px;
+    border-radius: 12px;
     display: flex;
-    height: 55%;
-    flex-direction: row;
-
+    padding-top:2%;
+    position: relative;
+}
+#page-7  .downSection >section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    box-shadow: -4px 8px 24px hsl(0deg 0% 0% / 31%);
+    background: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50% );
+    background-image: url("../img/icons8-book-30.png");
+    background-size: contain;
+    background-position-y: -4px;
 }
 
-#page-7 .scrollSection > .down {
-    height: 46%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-}
-
-
-/*UP=======>*/
-
-#page-7 .up > section {
+#page-7  .downSection >section>aside{
     width: 50%;
-    /*  border: red solid 0.5px;*/
     display: flex;
+    height: 100%;
     flex-direction: column;
-    align-items: end;
 }
-
-
-/*first-Child===================>*/
-#page-7 .up > :first-child > div {
-    background: black;
-    height: 100%;
-    width: 100%;
-
-}
-
-#page-7 .up > :first-child > div:nth-child(1) {
-    width: 60%;
-    margin-top: 20px;
-    margin-bottom: 0;
-    border-radius: 20px;
-    align-self: center;
-}
-
-#page-7 .up > :first-child > div:nth-child(2) {
-    width: 2.5%;
-    margin-right: 26%;
-    align-self: center;
-}
-
-#page-7 .up > :first-child > div:nth-child(3) {
-    width: 70%;
-    height: 20%;
-
-}
-
-
-/*UP ALL CHILD============>*/
-
-#page-7 .up > section > div {
-    height: 100%;
-    background: black;
-
-}
-
-#page-7 .up > section > div:nth-child(1) {
-    width: 60%;
-    margin-top: 20px;
-    margin-bottom: 0;
-    border-radius: 20px;
-    background: linear-gradient(to right, black , #243d3f);
-    align-self: flex-start;
-
-    letter-spacing: 2px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1em;
-    font-weight: bold;
-    transition: all 2s;
-}
-
-#page-7 .up > section > div:nth-child(2) {
-    width: 2.5%;
-    align-self: flex-start;
-    margin-left: 26%;
-}
-
-#page-7 .up > section > div:nth-child(3) {
-    width: 100%;
-    height: 20%;
-}
-
-
-/*DOWN=======>*/
-
-
-#page-7 .down > section {
-    box-sizing: border-box;
-    width: 60%;
-    height: 100%;
+#page-7  .downSection >section>aside div{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
+    width: 40%;
+
 
 }
-
-#page-7 .down > section > div {
-    background-color: black;
-}
-
-#page-7 .down > section > div:first-child {
-    width: 2.5%;
-    height: 40%;
-    padding-bottom: 2%;
-    margin-right: 26%;
+#page-7  .downSection >section>aside:first-child{
+    text-align: end;
+   align-items: end;
 
 }
+#page-7  .downSection >section>aside:last-child{
+    margin-top:75px;
 
-#page-7 .down > section > div:last-child {
-    width: 60%;
-    height: 50%;
-    border-radius: 20px;
-    background: linear-gradient(to right,  #243d3f, black);
-    letter-spacing: 2px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1em;
-    font-weight: bold;
-    transition: all 2s;
+}
+#page-7  .downSection >section>:first-child>div{
+    width: 90%;
+
+}
+#page-7  .downSection >section>:last-child>div{
+    width: 90%;
+}
+#page-7  .downSection >section>:last-child>div>p{
+    position: relative;
+    padding-left: 10%;
+    margin-top:100px;
+
+}
+#page-7  .downSection >section>:first-child>div>p{
+    position: relative;
+    margin-top: 100px;
+    padding-right: 10%;
+
+
+
+}
+#page-7  .downSection >section>:last-child>div>span{
+    padding-left: 10%;
+    color: var(--headerColorGold);
+}
+#page-7  .downSection >section>:first-child>div>span{
+    color: var(--headerColorGold);
+    padding-right: 10%;
+}
+#page-7  .downSection >section>:first-child>div>p::before{
+    position: absolute;
+    content: "";
+    right: -5px;
+    top:10px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
+    border-radius: 100%;
+    box-shadow: 0 0 4px hsl(0, 0%, 22%);
+    z-index: 5;
+
+}
+#page-7  .downSection >section>:last-child>div>p::before{
+    position: absolute;
+    content: "";
+    left:-4px;
+    top:5px;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 4px hsl(0, 0%, 22%);
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
+    border-radius: 100%;
+    z-index: 5;
+
+}
+#page-7  .downSection >section>:first-child>div>p::after{
+    content: "";
+    position: absolute;
+    right: -1px;
+    height: calc(100% + 100px);
+    width: 1px;
+    background: hsl(0, 0%, 22%);
+    top: -100px;
+}
+    /*TOP SECTION*/
+
+#page-7  .downSection >section>:first-child>:first-child>p::after{
+        content: "";
+        position: absolute;
+       right: -1px;
+        height: calc(100% + 100px);
+        width: 1px;
+    background: hsl(0, 0%, 22%);
+        top: -65px;
+}
+#page-7  .downSection >section>:last-child>div>p::after{
+    content: "";
+    position: absolute;
+   left: 0;
+    height: calc(-100% + 100px);
+    width: 1px;
+    background: hsl(0, 0%, 22%);
+    top: -60px;
 }
 
 
-#page-7 .down > :first-child {
 
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 
-}
 
-#page-7 .down > :first-child > div {
-    background-color: black;
-}
 
-#page-7 .down > :first-child > div:first-child {
-    width: 2.5%;
-    height: 40%;
-    margin-right: 26%;
 
-}
 
-#page-7 .down > :first-child > div:last-child {
-    width: 60%;
-    height: 50%;
-    border-radius: 20px;
 
-}
 
-#page-7 .up > section > :first-child:hover {
-    transition: all 2s;
-}
 
-#page-7 .down > section > :last-child:hover {
-    transition: all 2s;
 
-}
+
+
+
+
+
+
+
+
 
 
 

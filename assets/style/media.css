@@ -305,12 +305,12 @@
         margin: 12px !important;
         width: 90vw !important;
         height: 45% !important;
-        display: none !important;
+        display: none;
 
     }
     #page-4 .downSection #serviceSection section > div:nth-child(1),
     #page-4 .downSection #serviceSection section > div:nth-child(2){
-      display: flex !important;
+      display: flex;
     }
     #page-4 .downSection > section > aside > div {
         display: flex;

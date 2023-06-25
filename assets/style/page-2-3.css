@@ -9,8 +9,7 @@
 #page-2 > section {
     height: 90%;
     flex-direction: column;
-    border: black solid 2px;
-    box-shadow: 0 -2px 4px #020202;
+
 
 }
 
@@ -18,6 +17,10 @@
 #page-2 .upSection {
     height: 10%;
 
+}
+#page-2 .upSection>h1{
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 #page-2 .downSection {
@@ -98,7 +101,7 @@
     margin: auto;
     width: 10px;
     height: 10px;
-    background-color: #01EFFF;
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
     border-radius: 100%;
     z-index: 5;
 
@@ -111,7 +114,7 @@
     height: calc(100% + 25px);
     top: 10px;
     margin: auto;
-    background-color: #01EFFF;
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
     z-index: 5;
 }
 #page-2 .downSection > section:last-child > article > p:last-child::after{
@@ -183,7 +186,8 @@
     margin: auto;
     width: 10px;
     height: 10px;
-    background-color:#01EFFF;
+  /*  background-color:#01EFFF;*/
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
     border-radius: 100%;
     z-index: 5;
 }
@@ -195,7 +199,7 @@
     height: calc(100% + 10px);
     top: 10px;
     margin: auto;
-    background-color:  #01EFFF;
+    background:linear-gradient( to right, hsl(45, 100%, 72%), hsl(35, 100%, 57%) );
     z-index: 5;
 }
 #page-3 > section > article p:last-child::after{
