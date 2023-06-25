@@ -30,12 +30,7 @@
         background: #000000ab;
     }
 
-    body > header::after {
-        box-shadow: 0 0 20px #e52f2f, 0 0 20px #f10909;
-        background-color: rgba(225, 9, 9, 0.56);
-        animation-duration: 5s;
-        transition: all 4s;
-    }
+
 
     .mainHeaders {
         font-size: 1.4em;
@@ -94,16 +89,8 @@
         height: 85vh;
         margin-top: 8vh;
     }
-    #page-1 >section{
-        box-shadow: 1px 1px 4px whitesmoke;
-        transform: perspective(200vw) rotateY(0deg);
-        margin-right: 0;
-    }
-    #page-1 >section:hover{
-        box-shadow: 1px 1px 4px whitesmoke;
-         margin-right: 0;
-        transform: perspective(200vw) rotateY(0deg);
-    }
+
+
 
     #page-1 > section > .leftSection {
         width: 100% !important;
@@ -168,6 +155,10 @@
         box-shadow: -1px -1px 4px #000000;
         height: 90%;
     }
+    #page-2 .upSection>h1{
+        padding-left: 0;
+        text-align: center;
+    }
     #page-2 .downSection {
         font-size: 12px;
         height: 100%;
@@ -230,7 +221,7 @@
     #page-3>section{
         width: 97%;
         margin-top: 12vh;
-        box-shadow: 0 0 4px whitesmoke;
+
     }
     #page-3 > section > section > div> h2{
         font-size: 1em;
@@ -258,7 +249,8 @@
 
         /*PAGE 4 STYLE======================*/
     #page-4>section{
-        box-shadow: -1px -1px 4px whitesmoke;
+        border: var(--borderColor) solid 2px;
+        box-shadow: var(--borderShadow);
         margin-top: 16vh;
         width: 97% !important;
     }
@@ -321,7 +313,8 @@
 
     /*PAGE 5 STYLE======================*/
     #page-5>section{
-        box-shadow: 2px -1px 4px whitesmoke;
+        border: var(--borderColor) solid 2px;
+        box-shadow: var(--borderShadow);
         width: 97%;
         height: 80%;
     }
@@ -362,24 +355,8 @@
     }
 
         /*PAGE 7 STYLE (Education)======================*/
-    #page-7 > section {
-        margin-top: 8vh;
-        height: 90%;
-    }
-    #page-7 .downSection {
-        margin-bottom: 0 !important;
-    }
-    #page-7 .downSection > section {
-        height: 95% !important;
-        width: 85% !important;
-    }
-
-    #page-7 .scrollSection{
-        width: 300%!important;
-        height: 90%;
-    }
-    #page-7 .scrollSection>section{
-        width: 150% !important;
+    #page-7 > section{
+        padding-top: 10%;
     }
 
     /*PAGE 8 STYLE(Gallery)======================*/

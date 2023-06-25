@@ -158,12 +158,13 @@
     width: 100%;
     flex-direction: column;
 
-
 }
 
 .contactForm > input, textarea {
     border-radius: 5px;
     margin: 10px;
+    font-family: 'Poppins', sans-serif;
+font-weight: bold;
     /*border: blue solid 2px;*/
     color: black;
 }
