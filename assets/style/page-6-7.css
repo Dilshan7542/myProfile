@@ -111,6 +111,16 @@
 #page-6 .downSection > section > section > section > div:hover >article{
     opacity: 1;
     transition: opacity 2s;
+    text-shadow: 0 0 5px black;
+}
+#page-6 .downSection > section > section > section > div:hover >article>h4{
+    margin-bottom:5px;
+}
+#page-6 .downSection > section > section > section > div:hover >article>p{
+    margin-top: 0;
+}
+#page-6 .downSection > section > section > section > div:hover >article>p>strong{
+    color: cyan;
 }
 #page-6 .downSection > section > section > section > div::after{
     position: absolute;
@@ -148,12 +158,12 @@
     margin: auto;
 }
 #page-6 .downSection > section > section > section > div >:nth-child(3)>:first-child>span{
-    background-image: url("../img/icons8-github-24.png");
+    background-image: url("../img/icons8-eye-64.png");
     left: 2px;
 
 }
 #page-6 .downSection > section > section > section > div >:nth-child(3)>:last-child>span{
-    background-image: url("../img/icons8-eye-64.png");
+    background-image: url("../img/icons8-github-24.png");
     right: 2px;
 }
 
