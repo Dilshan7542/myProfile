@@ -10,9 +10,11 @@ $("#btnAboutMe").click(function (){
         $("main>section").css("transition","all 1s");
     });
 });*/
+document.body.style.overflow = 'hidden';
 $(window).on("load",function (){
     setTimeout(function (){
-   $("#loading").fadeOut(1000);
+   $("#loading").fadeOut(500);
+        document.body.style.overflow = 'visible';
     },5000);
 
 });

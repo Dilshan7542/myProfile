@@ -17,8 +17,8 @@
     flex-shrink: 1;
     flex-wrap: wrap;
     overflow: hidden;
-    border: black solid 2px;
-    box-shadow: 4px 0 5px #000000;
+    border: black solid 1px;
+    box-shadow: 3px 0 4px #000000;
 
 
 }
