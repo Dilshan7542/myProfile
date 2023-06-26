@@ -1,23 +1,43 @@
-@media all and (min-width: 1400px) {
+
+
+
+
+@media all and (min-width: 1500px) and (max-width: 2500px){
+
     #page-1 > section > section > article > div > h1 {
-        font-size: 3rem;
         letter-spacing: 10px;
+        font-size: 4em !important;
     }
 
     #page-1 > section > section > article > div > h1:first-child {
         padding-top: 0;
         margin-bottom: 0;
-    }
-
-    #page-1 > section > .rightSection > section:nth-child(2) {
-        height: 90%;
-        width: 50%;
-
 
     }
+    .workArea p{
+        font-size: 3em;
+    }
+    #page-1 > section > .leftSection > section > section:nth-child(1){
+        padding-left: 5%;
+    }
+    #page-2{
+        font-size: 1.5em;
+    }
+    #page-3{
+        font-size: 1.5em;
+    }
+    #page-7 .downSection > section{
+        font-size: 1.5em;
+    }
+
 }
 
 @media all and (min-width: 100px) and (max-width: 900px) {
+
+
+
+
+
     body>aside>section> h1>span {
         font-size: 3rem;
     }
@@ -421,6 +441,8 @@
         order: 1;
     }
 
+
+
     @media all and (max-height: 500px){
         main>main{
             height: auto;
@@ -431,11 +453,53 @@
 
     }
 
+    /*Tab SIZE*/
+    @media all and (min-height: 1000px) {
+        body {
+            background: white !important;
+
+        }
+        header > nav > :last-child > ul li a{
+            font-size: 2em !important;
+        }
+
+        #page-1 > section > section > article > div > h1{
+
+            font-size: 3.5rem !important;
+        }
+        #page-1 > section > section > article > div p{
+            font-size: 2.4rem !important;
+        }
+        #page-1 > section > section:nth-child(1) > section > section:nth-child(2) > div{
+            width: 10vw;
+            height: 10vw;
+            margin-left: 0;
+        }
+        #page-1 > section > .leftSection > section > section:nth-child(2){
+            justify-content: space-evenly;
+        }
+        #page-2 .downSection{
+            font-size: 21px;
+        }
+        main > main{
+            font-size: 28px;
+        }
+
+        #page-9 p{
+            font-size: 26px!important;
+        }
 
 
 
 
-}
+
+
+
+    } /*Tab SIZE END*/
+
+
+
+} /*end Query*/
 
 @media all and  (max-height:578px) {
     #page-1{
